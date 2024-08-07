@@ -1,0 +1,14 @@
+{
+    "name": "sns-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix frontend\""
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+      "multer": "^1.4.5-lts.1"
+    }
+  }

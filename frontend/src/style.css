@@ -1,0 +1,65 @@
+/* body {
+  background-image: url("../public/background.png"); /* 背景画像のパスを修正 */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+}
+
+header h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: azure;
+  text-shadow: 1px 1px 1px black;
+  margin-top: 90px;
+  margin-left: 23px;
+}
+
+.message {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 1px azure;
+} */ 
+
+/* .textOnNav {
+  position: absolute;
+  top: -2%;
+  right: 42%;
+  text-shadow: 1px 1px 1px azure;
+}
+
+.subTitle {
+  position: absolute;
+  top: 60%;
+  left: 33%;
+}
+
+.subMessage {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+}
+
+.announcement {
+  background-color: #f5f5f5;
+  padding: 20px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  margin-bottom: 100px; 
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.announcement h2 {
+  margin-bottom: 10px; }
+
+.announcement p {
+  margin: 0; 
+} */

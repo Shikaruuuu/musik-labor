@@ -1,0 +1,25 @@
+body {
+    background-image: url("../../../public/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 100%;
+    width: auto;
+    height: 400px;
+  }
+
+.message {
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 1px azure;
+}
+
+.subMessage {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}

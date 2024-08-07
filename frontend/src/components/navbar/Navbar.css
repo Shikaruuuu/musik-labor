@@ -1,0 +1,36 @@
+.navbar {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+.navbarWapper{
+    padding: 20px;
+}
+  
+.navbarList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 410px;
+    justify-content: center;
+  }
+  
+.navbarListItem{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 游ゴシック体, "Yu Gothic", 游ゴシック, YuGothic, Verdana, メイリオ, Meiryo, "M+ 1p", sans-serif;
+    color:sienna;
+    align-items: center;
+    box-shadow: 3px 7px 13px -10px #65789f;
+    cursor: pointer;
+  }
+
+  .navbarListItem:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: all 0.3s;
+}

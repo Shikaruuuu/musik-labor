@@ -1,0 +1,10 @@
+.siteTitle{
+    top: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: azure;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 80px;
+    margin-left: 23px;
+}
