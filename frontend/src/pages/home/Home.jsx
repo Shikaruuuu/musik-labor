@@ -2,13 +2,9 @@ import React from 'react';
 import "./Home.css"
 import Header from '../../components/header/Header';
 import Navbar from '../../components/navbar/Navbar';
-import Message from '../../components/Message';
-import SubTitle from '../../components/SubTitle';
-import SubMessage from '../../components/SubMessage';
 
 export default function Home(){
-  const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
-
+  
     return(
       <>
         <Header />
