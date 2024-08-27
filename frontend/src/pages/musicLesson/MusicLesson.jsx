@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./MusicLesson.css";
 import Header from '../../components/header/Header';
 import Navbar from '../../components/navbar/Navbar';
+import Hamburger from '../../components/hamburger/Hamburger';
 
 const MusicLesson = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    // ウィンドウサイズが変更された時にサイズを更新する
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // コンポーネントがアンマウントされた際にイベントリスナーを削除
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return(
         <>
         <Header />
-        <Navbar />
+        {/* 768px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
+        {windowWidth > 768 ? <Navbar /> : <Hamburger />}
         <div className="music-lesson">
     <h1>音楽教室のご案内</h1>
     <p>

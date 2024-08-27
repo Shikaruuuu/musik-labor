@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Profile.css";
 import Header from '../../components/header/Header';
 import Navbar from '../../components/navbar/Navbar';
+import Hamburger from '../../components/hamburger/Hamburger';
 
 const Profile = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    // ウィンドウサイズが変更された時にサイズを更新する
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // コンポーネントがアンマウントされた際にイベントリスナーを削除
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return(
         <>
         <Header />
-        <Navbar />
+        {/* 768px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
+        {windowWidth > 768 ? <Navbar /> : <Hamburger />}
   <div className="profileToru">
     <h1>横森　徹（TORU YOKOMORI）</h1>
     <h2>元神奈川フィルハーモニー管弦楽団チェロ奏者</h2>
