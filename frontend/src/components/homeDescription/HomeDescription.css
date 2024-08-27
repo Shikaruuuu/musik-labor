@@ -1,0 +1,12 @@
+.HomeDescription{
+    display: flex;
+    margin-top: 45px;
+    flex-direction: column;
+}
+
+.homeDescriptionText{
+    align-self: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}

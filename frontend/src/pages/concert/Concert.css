@@ -1,9 +1,9 @@
 body {
-    background-image: url("../../../public/background.png");
+    /* background-image: url("../../../public/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: 100%;
+    background-position-y: 100%; */
     width: auto;
     height: 400px;
   }

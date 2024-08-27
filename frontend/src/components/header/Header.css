@@ -1,3 +1,15 @@
+.header {
+    background-image: url("../../../public/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 50%;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
+    width: 100%;
+    height: 400px;
+}
+
 .siteTitle{
     top: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
