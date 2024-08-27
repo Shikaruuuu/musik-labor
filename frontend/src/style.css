@@ -1,65 +1,20 @@
-/* body {
-  background-image: url("../public/background.png"); /* 背景画像のパスを修正 */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  width: auto;
+/* デフォルトのスタイル（デスクトップ向け） */
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-header h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 60px;
-  color: azure;
-  text-shadow: 1px 1px 1px black;
-  margin-top: 90px;
-  margin-left: 23px;
+/* タブレット向けスタイル */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
 }
 
-.message {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-  text-shadow: 1px 1px 1px azure;
-} */ 
-
-/* .textOnNav {
-  position: absolute;
-  top: -2%;
-  right: 42%;
-  text-shadow: 1px 1px 1px azure;
+/* スマホ向けスタイル */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
-
-.subTitle {
-  position: absolute;
-  top: 60%;
-  left: 33%;
-}
-
-.subMessage {
-  position: absolute;
-  top: 70%;
-  left: 20%;
-}
-
-.announcement {
-  background-color: #f5f5f5;
-  padding: 20px; 
-  border: 1px solid #ddd; 
-  border-radius: 5px;
-  margin-bottom: 100px; 
-  position: absolute;
-  top: 90%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-}
-
-.announcement h2 {
-  margin-bottom: 10px; }
-
-.announcement p {
-  margin: 0; 
-} */

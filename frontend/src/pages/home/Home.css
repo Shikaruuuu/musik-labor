@@ -1,3 +1,23 @@
+/* スマホ向けスタイル */
+@media (max-width: 480px) {
+    .message {
+        top: 90%;
+        font-size: 1.0em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .subMessage {
+        top: 150%;
+        font-size: 1em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    body {
+        height: 60vh;
+    }
+}
 body {
     background-image: url("../../../public/background.png");
     background-repeat: no-repeat;
@@ -22,4 +42,21 @@ body {
     position: absolute;
     top: 60%;
     left: 10%;
+}
+
+/* タブレットとスマホの共通スタイル */
+@media (max-width: 1024px) {
+    .message {
+        top: 25%;
+        font-size: 1.0em;
+    }
+
+    .subMessage {
+        top: 50%;
+        font-size: 1.2em;
+    }
+
+    body {
+        height: 80vh; /* 背景の高さを調整 */
+    }
 }
