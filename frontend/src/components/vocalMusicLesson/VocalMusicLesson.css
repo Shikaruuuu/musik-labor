@@ -1,0 +1,65 @@
+.celloLesson{
+    margin-top: 60px;
+}
+
+.celloLessonTitle{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.celloTeacherName{
+    align-self: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.toruImg{
+    height: 40%;
+    width: 40%;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.celloDescriptionUpper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.celloDescriptionUpperText{
+    align-self: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.celloDescriptionMiddle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.priceTitle{
+    align-self: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.celloDescriptionBottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.celloDescriptionBottomText{
+    align-self: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
