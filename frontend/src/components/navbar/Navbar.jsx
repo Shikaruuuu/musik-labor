@@ -14,7 +14,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="navbarListItem">
-            <Link to="/musiclesson" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <Link to="/vocalLesson" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
             <span className="navbarListItemText">声楽教室</span>
             </Link>
           </li>
