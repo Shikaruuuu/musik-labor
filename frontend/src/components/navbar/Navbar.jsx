@@ -8,29 +8,29 @@ export default function Navbar() {
     <div className="navbar">
       <div className="navbarWrapper">
         <ul className="navbarList">
-          <li className="navbarListItem">
+        <li className="navbarListItem">
             <Link to="/" className="navbarLink" style={{ textDecoration: "none", color: "black" }}>
             <span className="navbarListItemText">ホーム</span>
             </Link>
           </li>
           <li className="navbarListItem">
-            <Link to="/profile" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
-            <span className="navbarListItemText">プロフィール</span>
+            <Link to="/musiclesson" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">声楽教室</span>
             </Link>
           </li>
           <li className="navbarListItem">
             <Link to="/musiclesson" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
-            <span className="navbarListItemText">音楽教室</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link to="/homelesson" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
-            <span className="navbarListItemText">チェロ出張レッスン</span>
+            <span className="navbarListItemText">チェロ教室</span>
             </Link>
           </li>
           <li className="navbarListItem">
             <Link to="/concert" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
             <span className="navbarListItemText">出張演奏</span>
+            </Link>
+          </li>
+          <li className="navbarListItem">
+            l<Link to="/profile" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">プロフィール</span>
             </Link>
           </li>
           <li className="navbarListItem">

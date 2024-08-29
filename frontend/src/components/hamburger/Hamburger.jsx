@@ -14,32 +14,50 @@ export default function Hamburger() {
       </div>
       {isOpen && (
         <ul className="hamburger-items">
-          <li className="hamburger-item">
-            <Link to="/" onClick={() => setIsOpen(false)}>ホーム</Link>
+          <li className="navbarListItem">
+            <Link to="/" className="navbarLink" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">ホーム</span>
+            </Link>
           </li>
-          <li className="hamburger-item">
-            <Link to="/profile" onClick={() => setIsOpen(false)}>プロフィール</Link>
+          <li className="navbarListItem">
+            <Link to="/musiclesson" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">声楽教室</span>
+            </Link>
           </li>
-          <li className="hamburger-item">
-            <Link to="/musiclesson" onClick={() => setIsOpen(false)}>音楽教室</Link>
+          <li className="navbarListItem">
+            <Link to="/musiclesson" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">チェロ教室</span>
+            </Link>
           </li>
-          <li className="hamburger-item">
-            <Link to="/homelesson" onClick={() => setIsOpen(false)}>チェロ出張レッスン</Link>
+          <li className="navbarListItem">
+            <Link to="/concert" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">出張演奏</span>
+            </Link>
           </li>
-          <li className="hamburger-item">
-            <Link to="/concert" onClick={() => setIsOpen(false)}>出張演奏</Link>
+          <li className="navbarListItem">
+            l<Link to="/profile" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">プロフィール</span>
+            </Link>
           </li>
-          <li className="hamburger-item">
-            <Link to="/faq" onClick={() => setIsOpen(false)}>お問い合わせ</Link>
+          <li className="navbarListItem">
+            <Link to="/faq" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">お問い合わせ</span>
+            </Link>
           </li>
-          <li className="hamburger-item">
-            <Link to="/access" onClick={() => setIsOpen(false)}>アクセス</Link>
+          <li className="navbarListItem">
+            <Link to="/access" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">アクセス</span>
+            </Link>
           </li>
-          <li className="hamburger-item">
-            <Link to="/shop" onClick={() => setIsOpen(false)}>提携工房</Link>
+          <li className="navbarListItem">
+            <Link to="/shop" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">提携工房</span>
+            </Link>
           </li>
-          <li className="hamburger-item">
-            <Link to="/blog" onClick={() => setIsOpen(false)}>ブログ</Link>
+          <li className="navbarListItem">
+            <Link to="/blog" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <span className="navbarListItemText">ブログ</span>
+            </Link>
           </li>
         </ul>
       )}
