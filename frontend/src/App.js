@@ -6,6 +6,7 @@ import Profile from "./pages/profile/Profile";
 import MusicLesson from "./pages/musicLesson/MusicLesson";
 import Concert from "./pages/concert/Concert";
 import VocalLesson from "./pages/vocalLesson/VocalLesson";
+import Blog from "./pages/blog/Blog";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/vocalLesson" element={<VocalLesson />} />
+      </Routes>
+      <Routes>
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   );
