@@ -4,3 +4,34 @@
     border: 1px;
     border-color: black;
 }
+
+.basicInfo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.toruImg{
+    height: 40%;
+    width: 40%;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.name{
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.profile1{
+    align-self: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.profile2{
+    align-self: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}

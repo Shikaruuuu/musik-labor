@@ -5,7 +5,7 @@
 }
 
 /* タブレット向けスタイル */
-@media (max-width: 768px) {
+@media (max-width: 1036px) {
   .container {
     width: 95%;
   }

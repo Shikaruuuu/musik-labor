@@ -24,8 +24,8 @@ const VocalLesson = () => {
   return (
     <>
       <Header />
-      {/* 768px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
-      {windowWidth > 768 ? <Navbar /> : <Hamburger />}
+      {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
+      {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
       <VocalMusicLesson />
     </>
   );

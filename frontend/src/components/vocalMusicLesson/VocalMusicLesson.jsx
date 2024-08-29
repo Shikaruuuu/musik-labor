@@ -7,7 +7,7 @@ const VocalMusicLesson = () => {
       <div className="celloLesson">
         <div className="celloLessonTitle">
           <span className="celloTeacherName">声楽教室：講師　横森明美</span>
-          <img src="./akemi_profile.jpg" className="toruImg"></img>
+          <img src="./akemi_profile.jpg" className="akemiImg"></img>
         </div>
         <div className="celloDescriptionUpper">
           <span className="celloDescriptionUpperText">
