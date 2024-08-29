@@ -35,7 +35,7 @@ export default function Hamburger() {
             </Link>
           </li>
           <li className="navbarListItem">
-            l<Link to="/profile" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
+            <Link to="/profile" className="navbarListItemText" style={{ textDecoration: "none", color: "black" }}>
             <span className="navbarListItemText">プロフィール</span>
             </Link>
           </li>
