@@ -20,6 +20,8 @@
     width: 40%;
     align-self: center;
     margin-bottom: 10px;
+    max-height: 200px;
+    max-width: 200px;
 }
 
 .celloDescriptionUpper{
@@ -42,11 +44,93 @@
     align-items: center;
 }
 
-.priceTitle{
+.lessonDescriptionWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.lessonDescriptionTitle{
     align-self: center;
-    margin-top: 10px;
     font-weight: bold;
     font-size: 20px;
+}
+
+.lessonDescription{
+    align-self: center;
+    font-size: 20px;
+}
+
+.priceTitle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.priceTitleText{
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.priceList{
+    font-size: 20px;
+}
+
+.trialLesson{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.trialLessonDescription{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lessonContents{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.LessonConttentsTitle{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.LessonContentsTitleText{
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.LessonContentsTitleSubText{
+    align-self: center;
+}
+
+.LessonContentsDesctiptionUpper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.LessonContentsDesctiptionMiddle{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.LessonContentsDesctiptionBottom{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.LessonContentsDesctiptionText{
+    align-self: center;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .celloDescriptionBottom{
@@ -58,8 +142,6 @@
 
 .celloDescriptionBottomText{
     align-self: center;
-    margin-top: 10px;
-    font-weight: bold;
     font-size: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
