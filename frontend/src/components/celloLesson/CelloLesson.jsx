@@ -156,6 +156,8 @@ const CelloLesson = () => {
             </span>
             <span className="LessonContentsDesctiptionText">
               生徒さんそれぞれお持ちの楽器の響きに音楽ホールの持つ独特の響き、音色、残響、空間をプラスし、生徒さん皆さんがコンサートホールでのチェロの響きを堪能する事が出来る、
+            </span>
+            <span className="LessonContentsDesctiptionText">
               音楽ホール(旭区民文化センターサンハート)での合同レッスン練習会を約半年毎に開催しております。
             </span>
           </div>
