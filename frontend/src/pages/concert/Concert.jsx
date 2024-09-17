@@ -145,14 +145,20 @@ const Concert = () => {
             <ul>
               <ul>
                 <li className="priceList">
-                  基本：５０，０００円（税込 55,000 円）～神奈川県外
+                  基本：５０，０００円（税込 55,000 円）～
                 </li>
+              </ul>
+            </ul>
+            <span className="consertPriceDescriptionText">神奈川県外</span>
+            <ul>
+              <ul>
                 <li className="priceList">
                   基本：５０，０００円（税込 55,000
                   円）～＋機材運搬費＋交通費（宿泊を伴う場合別途ご相談）
                 </li>
               </ul>
             </ul>
+
             <span className="consertPriceDescriptionText">
               基本的にはソプラノ・チェロ・ピアノの３名でお伺い致しますが、スケジュールの都合で２名でお伺いする場合もございます。
             </span>
