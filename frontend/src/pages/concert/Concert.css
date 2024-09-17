@@ -1,3 +1,72 @@
-.concert {
-    margin-top: 50px;
+.consertGuide{
+    margin-top: 10px;
+}
+
+.consertGuideTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.consertGuideDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.consertGuideDescriptionText{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.consertContent{
+    margin-top: 20px;
+}
+
+.consertContentTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.consertContentDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.consertContentDescriptionText{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.consertProgram{
+    margin-top: 20px;
+}
+
+.consertProgramTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.consertProgramDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.consertProgramDescriptionText{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.consertPrice{
+    margin-top: 20px;
+}
+
+.consertPriceTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.consertPriceDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.consertPriceDescriptionText{
+    font-size: 20px;
+    margin-top: 5px;
 }
