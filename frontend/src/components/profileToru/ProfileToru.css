@@ -10,6 +10,10 @@
     flex-direction: column;
     margin-bottom: 10px;
 }
+.basicProfile{
+    font-size: 20px;
+    margin-top: 20px;
+}
 
 .toruImg{
     height: 40%;
@@ -32,6 +36,19 @@
 
 .profile2{
     align-self: center;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 10px;
+}
+.background{
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundDesc{
+    font-size: 20px;
+}
+
+.instrumentsInfo{
+    font-size: 20px;
+    margin-top: 20px;
 }

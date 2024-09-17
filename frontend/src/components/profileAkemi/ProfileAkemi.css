@@ -1,6 +1,6 @@
-.profileAkemi{
+.profileToru{
     margin-top: 55px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border: 1px;
     border-color: black;
 }
@@ -9,6 +9,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+}
+.basicProfile{
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .akemiImg{
@@ -24,7 +28,6 @@
     font-size: 20px;
     margin-bottom: 10px;
 }
-
 .profile1{
     align-self: center;
     font-size: 15px;
@@ -33,6 +36,19 @@
 
 .profile2{
     align-self: center;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 10px;
+}
+.background{
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundDesc{
+    font-size: 20px;
+}
+
+.akemiMessage{
+    font-size: 20px;
+    margin-top: 20px;
 }
