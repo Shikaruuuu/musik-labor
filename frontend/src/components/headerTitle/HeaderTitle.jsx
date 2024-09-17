@@ -5,8 +5,6 @@ export default function HeaderTitle() {
   return (
     <div siteTitle>
       <span className="siteTitleText">ムジーク・らぼあ</span>
-      <span className="siteTitleText">ムジーク・らぼあ</span>
-      <span className="siteTitleText">ムジーク・らぼあ</span>
     </div>
   );
 }
