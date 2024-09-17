@@ -1,21 +1,21 @@
-.celloLesson{
+.vocalLesson{
     margin-top: 60px;
 }
 
-.celloLessonTitle{
+.vocalLessonTitle{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.celloTeacherName{
+.vocalTeacherName{
     align-self: center;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.toruImg{
+.akemiImg{
     height: 40%;
     width: 40%;
     align-self: center;
@@ -24,23 +24,23 @@
     max-width: 200px;
 }
 
-.celloDescriptionUpper{
+.vocalDescriptionUpper{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     align-items: center;
 }
 
-.celloDescriptionUpperText{
+.vocalDescriptionUpperText{
     align-self: center;
     margin-top: 10px;
     font-size: 20px;
 }
 
-.celloDescriptionMiddle{
+.vocalDescriptionMiddle{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 20px;
     align-items: center;
 }
 
@@ -59,13 +59,13 @@
 .lessonDescription{
     align-self: center;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .priceTitle{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .priceTitleText{
@@ -88,20 +88,20 @@
     font-size: 20px;
 }
 
-.lessonContents{
+.vocalAttractive{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vocalAttractiveTitle{
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-.LessonConttentsTitle{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.LessonContentsTitleText{
+.vocalAttractiveTitleText{
     align-self: center;
     font-weight: bold;
     font-size: 20px;
@@ -135,14 +135,14 @@
     margin-bottom: 5px;
 }
 
-.celloDescriptionBottom{
+.vocalDescriptionBottom{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     align-items: center;
 }
 
-.celloDescriptionBottomText{
+.vocalDescriptionBottomText{
     align-self: center;
     font-size: 20px;
     margin-bottom: 30px;
