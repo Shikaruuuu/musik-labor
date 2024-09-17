@@ -7,6 +7,7 @@ import MusicLesson from "./pages/musicLesson/MusicLesson";
 import Concert from "./pages/concert/Concert";
 import VocalLesson from "./pages/vocalLesson/VocalLesson";
 import Blog from "./pages/blog/Blog";
+import Access from "./pages/access/Access";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/blog" element={<Blog />} />
+      </Routes>
+      <Routes>
+        <Route path="/access" element={<Access />} />
       </Routes>
     </Router>
   );
