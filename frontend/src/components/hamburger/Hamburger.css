@@ -1,8 +1,15 @@
 .hamburger-menu {
+    display: flex;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 100;
+    align-items: center;
+}
+
+.menu-text {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .menu-icon {

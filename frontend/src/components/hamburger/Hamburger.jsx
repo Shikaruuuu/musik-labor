@@ -7,6 +7,7 @@ export default function Hamburger() {
 
   return (
     <div className="hamburger-menu">
+      <div className="menu-text">メニュー</div>
       <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
         <span></span>
         <span></span>

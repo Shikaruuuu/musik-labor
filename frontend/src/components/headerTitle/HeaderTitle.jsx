@@ -1,8 +1,12 @@
 import React from "react";
 import "./HeaderTitle.css";
 
-export default function HeaderTitle(){
-    return (
-        <span className="siteTitle">ムジーク・らぼあ</span>
-    )
+export default function HeaderTitle() {
+  return (
+    <div siteTitle>
+      <span className="siteTitleText">ムジーク・らぼあ</span>
+      <span className="siteTitleText">ムジーク・らぼあ</span>
+      <span className="siteTitleText">ムジーク・らぼあ</span>
+    </div>
+  );
 }
