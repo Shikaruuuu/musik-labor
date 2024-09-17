@@ -3,7 +3,7 @@ import "./Access.css";
 import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import Hamburger from "../../components/hamburger/Hamburger";
-import HomeDesCription from "../../components/homeDescription/HomeDescription";
+import AccessContent from "../../components/access/AccessContent";
 
 export default function Access() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -27,7 +27,7 @@ export default function Access() {
       <Header />
       {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
-      <Access />
+      <AccessContent />
     </>
   );
 }

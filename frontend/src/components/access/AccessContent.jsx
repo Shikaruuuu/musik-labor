@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "./Access.css";
+import "./AccessContent.css";
 
-export default function Access() {
+export default function AccessContent() {
   return (
     <>
       <div className="Access">
