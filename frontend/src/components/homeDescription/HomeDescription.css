@@ -1,6 +1,6 @@
 .HomeDescription{
     display: flex;
-    margin-top: 45px;
+    margin-top: 20px;
     flex-direction: column;
 }
 
@@ -8,5 +8,5 @@
     align-self: center;
     margin-top: 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
