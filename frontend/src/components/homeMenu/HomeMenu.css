@@ -1,0 +1,64 @@
+.homeMenuWapper{
+    padding: 20px;
+}
+  
+.homeMenuList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+  }
+  
+.homeMenuListItem{
+    display: flex;
+    height: 120px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 游ゴシック体, "Yu Gothic", 游ゴシック, YuGothic, Verdana, メイリオ, Meiryo, "M+ 1p", sans-serif;
+    box-shadow: 3px 7px 13px -10px #65789f;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px;
+  }
+
+  .homeMenuListItem:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: all 0.3s;
+}
+
+.homeMenuListItemText{
+    margin-left: 120px;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 30px;
+}
+
+.homeMenuListItem.cello {
+    background-image: url("../../../public/cello.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(255,255,255,0.2);
+    background-blend-mode:lighten;
+  }
+  
+.homeMenuListItem.vocal {
+    background-image: url("../../../public/opera.png");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(255,255,255,0.2);
+    background-blend-mode:lighten;
+  }
+  
+  .homeMenuListItem.concert {
+    background-image: url("../../../public/concert.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(255,255,255,0.2);
+    background-blend-mode:lighten;
+  } 
+  

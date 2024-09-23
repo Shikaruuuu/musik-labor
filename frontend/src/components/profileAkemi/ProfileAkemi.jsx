@@ -7,9 +7,6 @@ export default function ProfileAkemi() {
       <div className="profileToru">
         <div className="basicInfo">
           <span className="name">横森明美 (AKEMI YOKOMORI)</span>
-          <span className="profile1">
-            元神奈川フィルハーモニー管弦楽団チェロ奏者
-          </span>
           <span className="profile2">二期会登録名 永田明美(AKEMI NAGATA)</span>
           <span className="profile2">講師／声楽家／ソプラノ</span>
           <img src="./akemi_profile.jpg" className="akemiImg"></img>
