@@ -29,8 +29,7 @@ const Concert = () => {
         <div className="consertGuideTitle">出張演奏のご案内</div>
         <div className="consertGuideDescription">
           <span className="consertGuideDescriptionText">
-            チェロの横森徹が神奈川フィルハーモニー管弦楽団在籍中に担当した、延べ数百公演に及ぶ高齢者施設や児童支援学校、各種パーティー等での演奏経験を活かし、普段なかなか演奏会場に足を運ぶ機会の少ない方々にも生のプロの演奏を十分に堪能して頂ける様、高齢者施設等の皆様の普段生活している場所への出張演奏（出張コンサート）を行っております。
-            また結婚披露宴や各種パーティー等への出張演奏も行います。
+            高齢者施設や児童支援学校等、普段なかなか演奏会場に足を運ぶ機会の少ない方々にも生のプロの演奏を十分に堪能して頂ける様、皆様の普段生活している場所への出張演奏（出張コンサート）を行っております。
           </span>
           <span className="consertGuideDescriptionText">
             また結婚披露宴や各種パーティー等への出張演奏も行います。
@@ -38,24 +37,23 @@ const Concert = () => {
         </div>
       </div>
       <div className="consertContent">
+        <div className="consertContentTitle">演奏内容</div>
         <div className="consertContentDescription">
           <span className="consertContentDescriptionText">
-            高齢者施設等での演奏ではソプラノの歌声とチェロの豊かな響きにピアノの伴奏で、ジャンルを問わずオペラアリアから日本歌曲、童謡、昭和歌謡曲、チェロの名曲等々、様々な耳なじみのある曲を取り上げお楽しみ頂きたいと思います。
+            ソプラノの歌声とチェロの豊かな響きにピアノの伴奏で、ジャンルを問わずオペラアリアから日本歌曲、童謡、昭和歌謡曲、チェロの名曲等々、様々な耳なじみのある曲を取り上げお楽しみ頂きたいと思います。
           </span>
           <span className="consertContentDescriptionText">
-            またお客様にも声で参加して頂く「一緒に歌う」コーナーや、一曲毎にその作品にまつわるお話や楽器の説明等を交えながら、開演から終演までを約４０分～６０分程度にまとめる事によって、長時間座っている事が困難な方々にも無理なく鑑賞して頂ける内容になっております。結婚披露宴や各種パーティー等では、その時節やその時々に相応しい曲やご依頼者様のご要望にお応え出来る様に選曲させて頂きます。
+            またお客様にも声で参加して頂く「一緒に歌う」コーナーや、一曲毎にその作品にまつわるお話や楽器の説明等を交えながら、開演から終演までを約４０分～６０分程度にまとめる事によって、長時間座っている事が困難な方々にも無理なく鑑賞して頂ける内容になっております。
           </span>
           <span className="consertContentDescriptionText">
-            また結婚披露宴や各種パーティー等への出張演奏も行います。
+            結婚披露宴や各種パーティー等では、その時節やその時々に相応しい曲やご依頼者様のご要望にお応え出来る様に選曲させて頂きます。
           </span>
         </div>
       </div>
       <div className="consertProgram">
-        <div className="consertProgramTitle">プログラム</div>
+        <div className="consertProgramTitle">プログラム（例）</div>
         <div className="consertProgramDescription">
-          <span className="consertProgramDescriptionText">
-            過去に行ってきた公演の一例 開演
-          </span>
+          <span className="consertProgramDescriptionText">開演</span>
           <span className="consertProgramDescriptionText">チェロ</span>
           <ul>
             <ul>
@@ -131,10 +129,10 @@ const Concert = () => {
           </ul>
           <span className="consertProgramDescriptionText">
             他多数クラシック・オペラ・チェロ名曲など上記以外の曲も多数ご用意しております。
-            お気に入りの曲がございましたらリクエスト下さい。（上記はほんの一例です）
+            お気に入りの曲がございましたらリクエスト下さい。
           </span>
           <span className="consertProgramDescriptionText">
-            なおこれらの曲の編曲は、『ムジーク・らぼあ』で依頼致しました、東京音楽大学出身の新進気鋭の若手作曲家北島幸作氏によるオリジナルアレンジでお楽しみ頂けます。
+            これらの曲の編曲は、『ムジーク・らぼあ』で依頼致しました、東京音楽大学出身の新進気鋭の若手作曲家北島幸作氏によるオリジナルアレンジでお楽しみ頂けます。
           </span>
         </div>
         <div className="consertPrice">
