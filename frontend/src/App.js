@@ -8,6 +8,7 @@ import Concert from "./pages/concert/Concert";
 import VocalLesson from "./pages/vocalLesson/VocalLesson";
 import Blog from "./pages/blog/Blog";
 import Access from "./pages/access/Access";
+import PriceList from "./pages/priceList/PriceList";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/concert" element={<Concert />} />
+      </Routes>
+      <Routes>
+        <Route path="/priceList" element={<PriceList />} />
       </Routes>
       <Routes>
         <Route path="/vocalLesson" element={<VocalLesson />} />

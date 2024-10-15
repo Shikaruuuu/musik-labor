@@ -20,7 +20,7 @@ export default function HomeMenu() {
             className="homeMenuListItem vocal"
             style={{ textDecoration: "none", color: "black" }}>
             <li>
-              <span className="homeMenuListItemText">声楽教室</span>
+              <span className="homeMenuListItemText">声楽教室　</span>
             </li>
           </Link>
           <Link
@@ -28,7 +28,15 @@ export default function HomeMenu() {
             className="homeMenuListItem concert"
             style={{ textDecoration: "none", color: "black" }}>
             <li>
-              <span className="homeMenuListItemText">出張演奏</span>
+              <span className="homeMenuListItemText">出張演奏　</span>
+            </li>
+          </Link>
+          <Link
+            to="/priceList"
+            className="homeMenuListItem priceList"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li>
+              <span className="homeMenuListItemText">料金表　　</span>
             </li>
           </Link>
         </ul>
