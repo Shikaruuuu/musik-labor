@@ -5,18 +5,26 @@ export default function AccessContent() {
     <>
       <div className="Access">
         <span className="AccessTitle">アクセス</span>
-        <span className="homeDescriptionText">
-          シニアまで全ての方に音楽の 楽しさ、素晴らしさを感じて頂ける様、
-        </span>
-        <span className="homeDescriptionText">
-          元神奈川フィルハーモニー管弦楽団チェロ奏者横森徹と二期会オペラ歌手横森明美が、
-        </span>
-        <span className="homeDescriptionText">
-          チェロ教室・声楽教室をはじめ、高齢者施設や各種パーティー会場等への出張演奏・
-        </span>
-        <span className="homeDescriptionText">
-          トレーナー・楽器購入のお手伝いまで幅広くご提案させて頂いております。
-        </span>
+        <div className="classLocationWrapper">
+          <span className="classLocation">金が谷教室</span>
+          <span className="classLocation">横浜市旭区金が谷 2 丁目</span>
+        </div>
+        <div className="busStopWrapper">
+          <span className="busDescriptionText">
+            相鉄線二俣川駅北口バス乗り場より
+          </span>
+          <span className="busDescriptionText">
+            相鉄バス ニュータウン第 7 下車 徒歩 3 分
+          </span>
+        </div>
+        <div className="busStopWrapper">
+          <span className="busDescriptionText">
+            相鉄線三ツ境駅北口バス乗り場より
+          </span>
+          <span className="busDescriptionText">相鉄バス 岸本下車 徒歩3分 </span>
+        </div>
+        <span className="onFootText">徒歩:三ツ境駅南口徒歩 19 分 </span>
+        <span className="parking">駐車場1台有り</span>
       </div>
     </>
   );

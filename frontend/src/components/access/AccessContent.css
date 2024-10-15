@@ -1,0 +1,43 @@
+.Access{
+    display: flex;
+    flex-direction: column;
+}
+
+.AccessTitle{
+    align-self: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.classLocationWrapper{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.classLocation{
+    font-size: 20px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.busStopWrapper{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.busDescriptionText{
+    font-size: 20px;
+    align-self: center; 
+}
+
+.onFootText{
+    font-size: 20px;
+    align-self: center; 
+}
+
+.parking{
+    font-size: 20px;
+    align-self: center; 
+}

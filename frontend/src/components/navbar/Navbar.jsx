@@ -41,6 +41,14 @@ export default function Navbar() {
           </li>
           <li className="navbarListItem">
             <Link
+              to="/priceList"
+              className="navbarListItemText"
+              style={{ textDecoration: "none", color: "black" }}>
+              <span className="navbarListItemText">料金表</span>
+            </Link>
+          </li>
+          <li className="navbarListItem">
+            <Link
               to="/profile"
               className="navbarListItemText"
               style={{ textDecoration: "none", color: "black" }}>
