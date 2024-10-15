@@ -17,18 +17,12 @@ const VocalMusicLesson = () => {
             健康増進の為に歌いたい方、もっとカラオケを上手に歌う為のヴォイストレーニング等、
           </span>
           <span className="vocalDescriptionUpperText">
-            老若男女問わずお子様からシニアまで様々なご要望にお応え出来る様、お月謝制レッスンと、生徒さんのご都合に合わせた１レッスン制の２つのコースをご用意しております。
+            老若男女問わずお子様からシニアまで様々なご要望にお応え致します。
           </span>
         </div>
         <div className="vocalDescriptionMiddle">
           <div className="lessonDescriptionWrapper">
-            <span className="lessonDescriptionTitle">
-              レッスン内容（お月謝制・１レッスン制共通）
-            </span>
-            <span className="lessonDescription">
-              レッスンは基本的には月謝制月 2
-              回、若しくは生徒さんのご都合に合わせたレッスン毎に次回レッスン日を決める、１レッスン制で行います。
-            </span>
+            <span className="lessonDescriptionTitle">レッスン内容</span>
             <span className="lessonDescription">
               老若男女問わず小学生からシニアまで『楽しく歌う』を基本にクラシックの発声を学び、幅広いジャンルの曲を楽しく歌える様お手伝いさせて頂きます。
             </span>
@@ -39,8 +33,7 @@ const VocalMusicLesson = () => {
               また、生徒さんご自身でも歌いたい曲や挑戦してみたい曲等ある場合も、その都度生徒さんのご意向も取り入れて、楽しくレッスンを進めて参ります。
             </span>
             <span className="lessonDescription">
-              カラオケをもっと上手に歌える様になりたいと思われる方には『ヴォイスト
-              レーニング』をお勧め致しております。
+              カラオケをもっと上手に歌える様になりたいと思われる方には『ヴォイストレーニング』をお勧め致しております。
             </span>
             <span className="lessonDescription">
               ヴォイストレーニングは歌を歌う時に必要な体の使い方や姿勢、低い音から高い音までまんべんなく出せる事を学ぶトレーニングです。カラオケで低い声や高い声が難しいと感じる方や、正しい音程やリズムで歌える様になりたい方にはとてもお勧めです。
@@ -48,35 +41,28 @@ const VocalMusicLesson = () => {
           </div>
           <div className="priceTitle">
             <span className="priceTitleText">声楽レッスン料金</span>
-            <span className="priceTitleText">(月謝制月２回)</span>
+            <span className="priceTitleText">月２回</span>
+            <ul className="priceList">初級：30分 8,000円</ul>
+            <ul className="priceList">中級：40分 10,000 円</ul>
+            <ul className="priceList">上級:50分 12,000円</ul>
+            <span className="priceTitleText">月1回</span>
+            <ul className="priceList">初級：30分 5,000円</ul>
+            <ul className="priceList">中級：40分 6,000 円</ul>
+            <ul className="priceList">上級:50分 7,000円</ul>
+            <ul className="priceList">*無料体験レッスン:30 分</ul>
           </div>
-          <ul>
-            <ul>
-              <li className="priceList">初級：30 分 2 回 9,000 円</li>
-              <li className="priceList">中級：40 分 2 回 11,000 円</li>
-              <li className="priceList">上級：50 分 2 回 13,000 円</li>
-            </ul>
-          </ul>
-          <div className="priceTitle">
-            <span className="priceTitleText">(1レッスン制)</span>
-          </div>
-          <ul>
-            <ul>
-              <li className="priceList">初級：30 分 1 回 5,000 円</li>
-              <li className="priceList">中級：40 分 1 回 6,000 円</li>
-              <li className="priceList">上級：50 分 1 回 7,000 円</li>
-            </ul>
-          </ul>
           <div className="trialLesson">
             <span className="trialLessonDescription">
-              *体験レッスン:30 分 1,000 円
+              レッスンを行う上で生徒さんと
             </span>
             <span className="trialLessonDescription">
-              (レッスンを行う上で生徒さん
-              と講師のコミュニケーションはとても重要と考えます。
+              講師のコミュニケーションは
             </span>
             <span className="trialLessonDescription">
-              生徒さんから見ても講師と合う合わないは当然有ると思いますので、是非レッスンを体験してみて下さい)
+              とても重要と考えます。
+            </span>
+            <span className="trialLessonDescription">
+              是非レッスンを体験してみて下さい
             </span>
           </div>
         </div>
