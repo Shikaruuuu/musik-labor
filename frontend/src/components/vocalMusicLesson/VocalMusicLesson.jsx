@@ -72,20 +72,18 @@ const VocalMusicLesson = () => {
             <span className="vocalAttractiveTitleText">声楽を学ぶ魅力</span>
           </div>
           <ul>
-            <ul>
-              <li className="priceList">
-                歌を歌う上で必要とされる「呼吸法」「発声法」を学ぶ事によって、発音のスキルを身に付けられます。
-              </li>
-              <li className="priceList">
-                声楽は身体全体を使いますので、血行が良くなり健康維持に役立つと言われております。
-              </li>
-              <li className="priceList">
-                思い出の曲や懐かしい曲を歌う事により、その当時の記憶や回想をする事が脳に良い刺激を与え、認知症予防に効果が有ると考えられています。
-              </li>
-              <li className="priceList">
-                歌うと言う行為によって「幸せホルモン」が分泌され、幸福感や満足感・達成感を感じ易くなると言われております。
-              </li>
-            </ul>
+            <li className="priceList">
+              歌を歌う上で必要とされる「呼吸法」「発声法」を学ぶ事によって、発音のスキルを身に付けられます。
+            </li>
+            <li className="priceList">
+              声楽は身体全体を使いますので、血行が良くなり健康維持に役立つと言われております。
+            </li>
+            <li className="priceList">
+              思い出の曲や懐かしい曲を歌う事により、その当時の記憶や回想をする事が脳に良い刺激を与え、認知症予防に効果が有ると考えられています。
+            </li>
+            <li className="priceList">
+              歌うと言う行為によって「幸せホルモン」が分泌され、幸福感や満足感・達成感を感じ易くなると言われております。
+            </li>
           </ul>
         </div>
         <div className="vocalDescriptionBottom">
