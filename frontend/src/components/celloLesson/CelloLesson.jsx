@@ -10,10 +10,7 @@ const CelloLesson = () => {
         </div>
         <div className="celloDescriptionUpper">
           <span className="celloDescriptionUpperText">
-            人間の声に一番近い楽器と言われるチェロ。その豊かな響きをお子様からシニアまで、幅広い年齢層の方々に『チェロを奏でる歓び』を体験して頂ける様、
-          </span>
-          <span className="celloDescriptionUpperText">
-            初めて楽器を構える基礎から「白鳥」や「バッハ無伴奏チェロ組曲」等のチェロの名曲を奏でられる様になるまでの全てをお手伝いさせて頂きます。
+            人間の声に一番近い楽器と言われるチェロ。その豊かな響きをお子様からシニアまで、幅広い年齢層の方々に『チェロを奏でる歓び』を体験して頂ける様、初めて楽器を構える基礎から「白鳥」や「バッハ無伴奏チェロ組曲」等のチェロの名曲を奏でられる様になるまでの全てをお手伝いさせて頂きます。
           </span>
           <span className="celloDescriptionUpperText">
             またチェロは後ろから抱きかかえる様に構える事から、弦楽器の中で最も自然体で構える事が出来る楽器として、体に無理なく演奏出来る所がお勧めのポイントです。
