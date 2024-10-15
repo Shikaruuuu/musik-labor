@@ -41,11 +41,11 @@ const VocalMusicLesson = () => {
           </div>
           <div className="priceTitle">
             <span className="priceTitleText">声楽レッスン料金</span>
-            <span className="priceTitleText">月２回</span>
+            <span className="priceTitleText">月謝制月２回</span>
             <ul className="priceList">初級：30分 8,000円</ul>
             <ul className="priceList">中級：40分 10,000 円</ul>
             <ul className="priceList">上級:50分 12,000円</ul>
-            <span className="priceTitleText">月1回</span>
+            <span className="priceTitleText">１レッスン制</span>
             <ul className="priceList">初級：30分 5,000円</ul>
             <ul className="priceList">中級：40分 6,000 円</ul>
             <ul className="priceList">上級:50分 7,000円</ul>

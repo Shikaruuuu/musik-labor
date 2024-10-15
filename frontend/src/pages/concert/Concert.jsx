@@ -38,7 +38,6 @@ const Concert = () => {
         </div>
       </div>
       <div className="consertContent">
-        <div className="consertContentTitle">出張演奏のご案内</div>
         <div className="consertContentDescription">
           <span className="consertContentDescriptionText">
             高齢者施設等での演奏ではソプラノの歌声とチェロの豊かな響きにピアノの伴奏で、ジャンルを問わずオペラアリアから日本歌曲、童謡、昭和歌謡曲、チェロの名曲等々、様々な耳なじみのある曲を取り上げお楽しみ頂きたいと思います。

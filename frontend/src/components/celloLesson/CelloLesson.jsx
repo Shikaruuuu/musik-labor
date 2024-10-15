@@ -32,7 +32,7 @@ const CelloLesson = () => {
             <span className="priceTitleText">
               １レッスン（サイレントチェロ含む）
             </span>
-            <ul className="priceList">大人：60分　10,000円</ul>
+            <ul className="priceList">大　　　人：60 分 15,000 円～ </ul>
             <ul className="priceList">高校生以下：45 分 7,000 円</ul>
             <ul className="priceList">*無料体験レッスン:30 分</ul>
           </div>
