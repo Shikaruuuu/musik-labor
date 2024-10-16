@@ -132,7 +132,7 @@ export default function InquiryForm() {
             variant="contained"
             color="primary"
             disabled={!validateForm() || submitting}
-            sx={{ mt: 3, mb: 2, display: "flex", alignSelf: "center" }}>
+            sx={{ mt: 3, mb: 2 }}>
             送信
           </Button>
         </form>
