@@ -62,7 +62,7 @@
     background-blend-mode:lighten;
   } 
   .homeMenuListItem.priceList {
-    background-image: url("../../../public/priceList.jpg");
+    background-image: url("../../../public/score.jpg");
     background-size: cover;
     background-position: center;
     background-color:rgba(255,255,255,0.2);
