@@ -10,8 +10,13 @@ export default function HomeMenu() {
           <Link
             to="/musiclesson"
             className="homeMenuListItem cello"
-            style={{ textDecoration: "none", color: "black" }}>
-            <li>
+            style={{
+              textDecoration: "none",
+              color: "black",
+              display: "flex",
+              flexDirection: "column",
+            }}>
+            <li className="homeMenuListLi">
               <span className="homeMenuListItemText">
                 チェロ教室＆出張レッスン
               </span>
@@ -20,31 +25,40 @@ export default function HomeMenu() {
           <Link
             to="/vocalLesson"
             className="homeMenuListItem vocal"
-            style={{ textDecoration: "none", color: "black" }}>
-            <li>
-              <span className="homeMenuListItemText">
-                声楽教室　　　　　　　　
-              </span>
+            style={{
+              textDecoration: "none",
+              color: "black",
+              display: "flex",
+              flexDirection: "column",
+            }}>
+            <li className="homeMenuListLi">
+              <span className="homeMenuListItemText">声楽教室</span>
             </li>
           </Link>
           <Link
             to="/concert"
             className="homeMenuListItem concert"
-            style={{ textDecoration: "none", color: "black" }}>
-            <li>
-              <span className="homeMenuListItemText">
-                出張演奏　　　　　　　　
-              </span>
+            style={{
+              textDecoration: "none",
+              color: "black",
+              display: "flex",
+              flexDirection: "column",
+            }}>
+            <li className="homeMenuListLi">
+              <span className="homeMenuListItemText">出張演奏</span>
             </li>
           </Link>
           <Link
             to="/priceList"
-            className="homeMenuListItem priceList"
-            style={{ textDecoration: "none", color: "black" }}>
-            <li>
-              <span className="homeMenuListItemText">
-                料金表　　　　　　　　　　
-              </span>
+            className="homeMenuListItem priceLists"
+            style={{
+              textDecoration: "none",
+              color: "black",
+              display: "flex",
+              flexDirection: "column",
+            }}>
+            <li className="homeMenuListLi">
+              <span className="homeMenuListItemText">料金表</span>
             </li>
           </Link>
         </ul>

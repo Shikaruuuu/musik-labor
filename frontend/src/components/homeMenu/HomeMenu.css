@@ -7,12 +7,13 @@
     flex-direction: column;
     list-style-type: none;
     padding: 0;
-    justify-content: center;
+    align-items: center;
   }
   
 .homeMenuListItem{
     display: flex;
     height: 120px;
+    width: 370px;
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
@@ -25,18 +26,24 @@
     margin: 10px 10px;
   }
 
-  .homeMenuListItem:hover {
+  .homeMenuListLi{
+    display: flex;
+    align-items: center;
+  }
+
+.homeMenuListItemText{
+    margin-top: 40px;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 30px;
+  }
+
+.homeMenuListItem:hover {
     box-shadow: none;
     transform: translateY(5px);
     transition: all 0.3s;
 }
 
-.homeMenuListItemText{
-    margin-left: 10px;
-    color:white;
-    text-shadow: 1px 1px 1px black;
-    font-size: 30px;
-}
 
 .homeMenuListItem.cello {
     background-image: url("../../../public/cello.jpg");
@@ -54,14 +61,15 @@
     background-blend-mode:lighten;
   }
   
-  .homeMenuListItem.concert {
+.homeMenuListItem.concert {
     background-image: url("../../../public/concert.jpg");
     background-size: cover;
     background-position: center;
     background-color:rgba(255,255,255,0.2);
     background-blend-mode:lighten;
-  } 
-  .homeMenuListItem.priceList {
+  }
+  
+.homeMenuListItem.priceLists {
     background-image: url("../../../public/score.jpg");
     background-size: cover;
     background-position: center;
