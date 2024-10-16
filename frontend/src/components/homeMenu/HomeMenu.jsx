@@ -12,7 +12,9 @@ export default function HomeMenu() {
             className="homeMenuListItem cello"
             style={{ textDecoration: "none", color: "black" }}>
             <li>
-              <span className="homeMenuListItemText">チェロ教室</span>
+              <span className="homeMenuListItemText">
+                チェロ教室＆出張レッスン
+              </span>
             </li>
           </Link>
           <Link
@@ -20,7 +22,9 @@ export default function HomeMenu() {
             className="homeMenuListItem vocal"
             style={{ textDecoration: "none", color: "black" }}>
             <li>
-              <span className="homeMenuListItemText">声楽教室　</span>
+              <span className="homeMenuListItemText">
+                声楽教室　　　　　　　　
+              </span>
             </li>
           </Link>
           <Link
@@ -28,7 +32,9 @@ export default function HomeMenu() {
             className="homeMenuListItem concert"
             style={{ textDecoration: "none", color: "black" }}>
             <li>
-              <span className="homeMenuListItemText">出張演奏　</span>
+              <span className="homeMenuListItemText">
+                出張演奏　　　　　　　　
+              </span>
             </li>
           </Link>
           <Link
@@ -36,7 +42,9 @@ export default function HomeMenu() {
             className="homeMenuListItem priceList"
             style={{ textDecoration: "none", color: "black" }}>
             <li>
-              <span className="homeMenuListItemText">料金表　　</span>
+              <span className="homeMenuListItemText">
+                料金表　　　　　　　　　　
+              </span>
             </li>
           </Link>
         </ul>
