@@ -141,17 +141,15 @@ const Concert = () => {
             <span className="consertPriceDescriptionText">神奈川県内</span>
             <ul>
               <ul>
-                <li className="priceList">
-                  基本：５０，０００円（税込 55,000 円）～
-                </li>
+                <li className="priceList">基本：５０，０００円 ～</li>
               </ul>
             </ul>
             <span className="consertPriceDescriptionText">神奈川県外</span>
             <ul>
               <ul>
                 <li className="priceList">
-                  基本：５０，０００円（税込 55,000
-                  円）～＋機材運搬費＋交通費（宿泊を伴う場合別途ご相談）
+                  基本：５０，０００円
+                  ～＋機材運搬費＋交通費（宿泊を伴う場合別途ご相談）
                 </li>
               </ul>
             </ul>
@@ -160,8 +158,7 @@ const Concert = () => {
               基本的にはソプラノ・チェロ・ピアノの３名でお伺い致しますが、スケジュールの都合で２名でお伺いする場合もございます。
             </span>
             <span className="consertPriceDescriptionText">
-              その場合は上記基本料金より１０，０００円引きの４０，０００円（税込44,000
-              円）で賜りますのでご了承下さい。
+              その場合は上記基本料金より１０，０００円引きの４０，０００円で賜りますのでご了承下さい。
             </span>
             <span className="consertPriceDescriptionText">
               ご依頼者様のご要望がございましたら弦楽四重奏等の演奏も行いますので、ご希望の編成等ございましたらお気軽にお問い合わせ下さい。
