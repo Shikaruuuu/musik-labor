@@ -25,13 +25,13 @@ const CelloLesson = () => {
         </div>
         <div className="celloDescriptionMiddle">
           <div className="priceTitle">
-            <span className="priceTitleText">チェロレッスン料金：</span>
+            <span className="priceTitleText">チェロレッスン料金</span>
             <span className="priceTitleText">
               １レッスン（サイレントチェロ含む）
             </span>
-            <ul className="priceList">大　　　人：60 分 10,000 円</ul>
-            <ul className="priceList">高校生以下：45 分 7,000 円</ul>
-            <ul className="priceList">*無料体験レッスン:30 分</ul>
+            <ul className="priceList">大　　　人：60 分　10,000 円</ul>
+            <ul className="priceList">高校生以下：45 分 　 7,000 円</ul>
+            <ul className="priceList">*無料体験レッスン：30 分</ul>
           </div>
           <div className="trialLesson">
             <span className="trialLessonDescription">
@@ -56,7 +56,7 @@ const CelloLesson = () => {
             </span>
           </div>
           <div className="priceTitle">
-            <span className="priceTitleText">出張チェロレッスン料金：</span>
+            <span className="priceTitleText">出張チェロレッスン料金</span>
             <span className="priceTitleText">
               １レッスン（サイレントチェロ含む）
             </span>
