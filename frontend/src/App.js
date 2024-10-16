@@ -9,6 +9,7 @@ import VocalLesson from "./pages/vocalLesson/VocalLesson";
 import Blog from "./pages/blog/Blog";
 import Access from "./pages/access/Access";
 import PriceList from "./pages/priceList/PriceList";
+import InquiryPage from "./pages/inquiryPage/InquiryPage";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/access" element={<Access />} />
+      </Routes>
+      <Routes>
+        <Route path="/inquiry" element={<InquiryPage />} />
       </Routes>
     </Router>
   );

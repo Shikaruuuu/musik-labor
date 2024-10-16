@@ -65,7 +65,7 @@ export default function Navbar() {
           </li>
           <li className="navbarListItem">
             <Link
-              to="/faq"
+              to="/inquiry"
               className="navbarListItemText"
               style={{ textDecoration: "none", color: "black" }}>
               <span className="navbarListItemText">お問い合わせ</span>
