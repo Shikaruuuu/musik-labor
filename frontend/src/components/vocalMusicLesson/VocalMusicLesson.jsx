@@ -11,13 +11,7 @@ const VocalMusicLesson = () => {
         </div>
         <div className="vocalDescriptionUpper">
           <span className="vocalDescriptionUpperText">
-            『ムジーク・らぼあ』声楽教室では初めて声楽を学ぶ方から、本格的にオペラアリアを歌ってみたい方、気軽に歌を歌いたい方、
-          </span>
-          <span className="vocalDescriptionUpperText">
-            健康増進の為に歌いたい方、もっとカラオケを上手に歌う為のヴォイストレーニング等、
-          </span>
-          <span className="vocalDescriptionUpperText">
-            老若男女問わずお子様からシニアまで様々なご要望にお応え致します。
+            『ムジーク・らぼあ』声楽教室では初めて声楽を学ぶ方から、本格的にオペラアリアを歌ってみたい方、気軽に歌を歌いたい方、健康増進の為に歌いたい方、もっとカラオケを上手に歌う為のヴォイストレーニング等、老若男女問わずお子様からシニアまで様々なご要望にお応え致します。
           </span>
         </div>
         <div className="vocalDescriptionMiddle">

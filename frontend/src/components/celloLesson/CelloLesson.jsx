@@ -29,7 +29,7 @@ const CelloLesson = () => {
             <span className="priceTitleText">
               １レッスン（サイレントチェロ含む）
             </span>
-            <ul className="priceList">大　　　人：60 分 15,000 円～ </ul>
+            <ul className="priceList">大　　　人：60 分 10,000 円</ul>
             <ul className="priceList">高校生以下：45 分 7,000 円</ul>
             <ul className="priceList">*無料体験レッスン:30 分</ul>
           </div>
@@ -61,7 +61,7 @@ const CelloLesson = () => {
               １レッスン（サイレントチェロ含む）
             </span>
           </div>
-          <ul className="priceList">大 人：60 分 15,000 円～</ul>
+          <ul className="priceList">大　　　人：60 分 15,000 円～ </ul>
           <ul className="priceList">高校生以下：45 分 11,000 円～</ul>
           <span>上記は神奈川県内の出張料金です。県外は別途ご相談下さい。</span>
         </div>
@@ -71,36 +71,17 @@ const CelloLesson = () => {
           </div>
           <div className="LessonContentsDesctiptionUpper">
             <span className="LessonContentsDesctiptionText">
-              初めてチェロを習う方にはチェロの構え方や弓の持ち方、「ウェルナーチェロ教則本」や
-            </span>
-            <span className="LessonContentsDesctiptionText">
-              様々なメソッド等を使いながら小さな曲を少しずつ弾き進めて行き、
-            </span>
-            <span className="LessonContentsDesctiptionText">
-              基本的なボーイング、フィンガリングを覚えた比較的早い段階で講師との二重奏、
-            </span>
-            <span className="LessonContentsDesctiptionText">
-              アンサンブルを取り入れたレッスンを楽しんで頂きます。
+              初めてチェロを習う方にはチェロの構え方や弓の持ち方、「ウェルナーチェロ教則本」や様々なメソッド等を使いながら小さな曲を少しずつ弾き進めて行き、基本的なボーイング、フィンガリングを覚えた比較的早い段階で講師との二重奏、アンサンブルを取り入れたレッスンを楽しんで頂きます。
             </span>
           </div>
           <div className="LessonContentsDesctiptionMiddle">
             <span className="LessonContentsDesctiptionText">
-              過去にチェロを習っていたご経験のある方や、レッスンは未経験ながらも独学で
-            </span>
-            <span className="LessonContentsDesctiptionText">
-              チェロを弾いていらっしゃる方には、ご自身でお持ちの教則本や現在弾いている楽譜
-            </span>
-            <span className="LessonContentsDesctiptionText">
-              をお持ちになって頂き、レッスンを行いながら最適と思われる
-              教材や楽曲、講師との二重奏曲のご提案をさせて頂きます。
+              過去にチェロを習っていたご経験のある方や、レッスンは未経験ながらも独学でチェロを弾いていらっしゃる方には、ご自身でお持ちの教則本や現在弾いている楽譜をお持ちになって頂き、レッスンを行いながら最適と思われる教材や楽曲、講師との二重奏曲のご提案をさせて頂きます。
             </span>
           </div>
           <div className="LessonContentsDesctiptionBottom">
             <span className="LessonContentsDesctiptionText">
-              生徒さんご自身もチェロを演奏する上で弾きたい曲や挑戦してみたい曲等お有りになると思いますので、
-            </span>
-            <span className="LessonContentsDesctiptionText">
-              生徒さんとコミュニケーションを取りながら極力ご意向に沿える様お手伝いさせて頂きます。
+              生徒さんご自身もチェロを演奏する上で弾きたい曲や挑戦してみたい曲等お有りになると思いますので、生徒さんとコミュニケーションを取りながら極力ご意向に沿える様お手伝いさせて頂きます。
             </span>
           </div>
         </div>
