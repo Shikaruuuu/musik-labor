@@ -83,6 +83,7 @@ export default function Hamburger() {
           <li className="navbarListItem">
             <Link
               to="https://musiklabor.hatenablog.com/"
+              target="_blank"
               className="navbarListItemText"
               style={{ textDecoration: "none", color: "black" }}>
               <span className="navbarListItemText">ブログ</span>
