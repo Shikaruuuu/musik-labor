@@ -1,0 +1,9 @@
+.underInquiryForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.underInquiryFormText{
+    display: flex;
+    margin-bottom: 20px;
+}

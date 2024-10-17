@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { TextField, Button, Grid, Typography, Snackbar } from "@mui/material";
+import "./InquiryForm.css";
 
 export default function InquiryForm() {
   const [formData, setFormData] = useState({
@@ -69,80 +70,99 @@ export default function InquiryForm() {
   };
 
   return (
-    <Grid container justifyContent="center">
-      <Grid item xs={12} md={6}>
-        <Typography variant="h6" gutterBottom>
-          お問い合わせ
-        </Typography>
-        <form onSubmit={sendEmail}>
-          <TextField
-            fullWidth
-            required
-            label="お名前"
-            name="name"
-            value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          />
-          <TextField
-            fullWidth
-            required
-            label="お名前(カナ)"
-            name="kana_name"
-            value={formData.kana_name}
-            onChange={(e) =>
-              setFormData({ ...formData, kana_name: e.target.value })
-            }
-          />
-          <TextField
-            fullWidth
-            required
-            label="TEL"
-            name="phone"
-            value={formData.phone}
-            onChange={(e) =>
-              setFormData({ ...formData, phone: e.target.value })
-            }
-            placeholder="1234567890"
-          />
-          <TextField
-            fullWidth
-            required
-            label="Email"
-            name="email"
-            type="email"
-            value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
-          />
-          <TextField
-            fullWidth
-            required
-            label="お問い合わせ内容"
-            name="message"
-            multiline
-            rows={4}
-            value={formData.message}
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
-          />
-          <Button
-            type="submit"
-            variant="contained"
-            color="primary"
-            disabled={!validateForm() || submitting}
-            sx={{ mt: 3, mb: 2 }}>
-            送信
-          </Button>
-        </form>
+    <>
+      <Grid container justifyContent="center">
+        <Grid item xs={12} md={6}>
+          <Typography variant="h6" gutterBottom>
+            お問い合わせ
+          </Typography>
+          <form onSubmit={sendEmail}>
+            <TextField
+              fullWidth
+              required
+              label="お名前"
+              name="name"
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+            />
+            <TextField
+              fullWidth
+              required
+              label="お名前(カナ)"
+              name="kana_name"
+              value={formData.kana_name}
+              onChange={(e) =>
+                setFormData({ ...formData, kana_name: e.target.value })
+              }
+            />
+            <TextField
+              fullWidth
+              required
+              label="TEL"
+              name="phone"
+              value={formData.phone}
+              onChange={(e) =>
+                setFormData({ ...formData, phone: e.target.value })
+              }
+              placeholder="1234567890"
+            />
+            <TextField
+              fullWidth
+              required
+              label="Email"
+              name="email"
+              type="email"
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+            />
+            <TextField
+              fullWidth
+              required
+              label="お問い合わせ内容"
+              name="message"
+              multiline
+              rows={4}
+              value={formData.message}
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
+            />
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              disabled={!validateForm() || submitting}
+              sx={{ mt: 3, mb: 2 }}>
+              送信
+            </Button>
+          </form>
+        </Grid>
+        <Snackbar
+          open={open}
+          autoHideDuration={6000}
+          onClose={() => setOpen(false)}
+          message="問い合わせが送信されました。"
+        />
       </Grid>
-      <Snackbar
-        open={open}
-        autoHideDuration={6000}
-        onClose={() => setOpen(false)}
-        message="問い合わせが送信されました。"
-      />
-    </Grid>
+      <div className="underInquiryForm">
+        <span className="underInquiryFormText">
+          当サイトでは Gmail を使用しております。48
+          時間を超えて返信の無い場合は以下をご確認ください。
+        </span>
+        <span className="underInquiryFormText">
+          *迷惑メールフォルダ内をご確認下さい。
+          <br />
+          *携帯電話会社メール、ドメイン指定をされている方は「@gmail.com」からのメールを受信可能に設定して下さい。
+        </span>
+        <span className="underInquiryFormText">
+          直接お電話でのお問い合わせ頂く場合は、レッスン中や時間外は留守番電話になっておりますので、メッセージを入れて頂ければ折り返しご連絡させて頂きます。
+        </span>
+        <span className="underInquiryFormText">TEL 045-391-5599</span>
+      </div>
+    </>
   );
 }
