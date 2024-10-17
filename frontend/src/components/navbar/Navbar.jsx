@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 export default function Navbar() {
   return (
@@ -73,10 +74,11 @@ export default function Navbar() {
           </li>
           <li className="navbarListItem">
             <Link
-              to="/blog"
+              to="https://musiklabor.hatenablog.com/"
               className="navbarListItemText"
               style={{ textDecoration: "none", color: "black" }}>
               <span className="navbarListItemText">ブログ</span>
+              <LaunchIcon />
             </Link>
           </li>
           <li className="navbarListItem">

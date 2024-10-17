@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Hamburger.css";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,10 +82,11 @@ export default function Hamburger() {
           </li>
           <li className="navbarListItem">
             <Link
-              to="/blog"
+              to="https://musiklabor.hatenablog.com/"
               className="navbarListItemText"
               style={{ textDecoration: "none", color: "black" }}>
               <span className="navbarListItemText">ブログ</span>
+              <LaunchIcon />
             </Link>
           </li>
           <li className="navbarListItem">

@@ -145,7 +145,7 @@ export default function InquiryForm() {
           open={open}
           autoHideDuration={6000}
           onClose={() => setOpen(false)}
-          message="問い合わせが送信されました。"
+          message="お問い合わせが送信されました。"
         />
       </Grid>
       <div className="underInquiryForm">
