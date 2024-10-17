@@ -10,6 +10,7 @@ import Blog from "./pages/blog/Blog";
 import Access from "./pages/access/Access";
 import PriceList from "./pages/priceList/PriceList";
 import InquiryPage from "./pages/inquiryPage/InquiryPage";
+import Shop from "./pages/shop/Shop";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/inquiry" element={<InquiryPage />} />
+      </Routes>
+      <Routes>
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </Router>
   );

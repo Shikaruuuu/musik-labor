@@ -1,0 +1,7 @@
+.inPreparing{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 100px;
+}
