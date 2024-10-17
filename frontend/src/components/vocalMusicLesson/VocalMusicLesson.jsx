@@ -16,6 +16,7 @@ const VocalMusicLesson = () => {
         </div>
         <div className="vocalDescriptionMiddle">
           <div className="lessonDescriptionWrapper">
+            <img src="./lesson1.jpg" className="lessonImg"></img>
             <span className="lessonDescriptionTitle">レッスン内容</span>
             <span className="lessonDescription">
               老若男女問わず小学生からシニアまで『楽しく歌う』を基本にクラシックの発声を学び、幅広いジャンルの曲を楽しく歌える様お手伝いさせて頂きます。
@@ -58,6 +59,7 @@ const VocalMusicLesson = () => {
             <span className="trialLessonDescription">
               是非レッスンを体験してみて下さい
             </span>
+            <img src="./recital.jpg" className="lessonImg"></img>
           </div>
         </div>
 
