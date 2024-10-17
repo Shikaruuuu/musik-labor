@@ -51,6 +51,7 @@ const Concert = () => {
         </div>
       </div>
       <div className="consertProgram">
+        <img src="./visitConcert.jpg" className="concertImg"></img>
         <div className="consertProgramTitle">プログラム（例）</div>
         <div className="consertProgramDescription">
           <span className="consertProgramDescriptionText">開演</span>
@@ -102,6 +103,7 @@ const Concert = () => {
           <span className="consertProgramDescriptionText">
             上記のプログラムで約５０分程になります。
           </span>
+          <img src="./visitCelloConcert.jpg" className="concertImg"></img>
           <span className="consertProgramDescriptionText">
             プログラムで取り上げる曲は公演の行われる季節によって季節感のある曲を選び、お客様に四季折々の名曲を楽しんで頂いたり、また事前にお知らせ頂ければ可能な範囲でのリクエストも受け付けております。
           </span>
