@@ -26,6 +26,9 @@ export default function ProfileAkemi() {
             <li className="backgroundDesc">
               ２０１６年東京大田区アプリコホールにおいて自身初のリサイタルを開催し、各方面から好評を博す。
             </li>
+            <img
+              src="./akemi'sRecital.jpg"
+              className="profileContentsImg"></img>
             <li className="backgroundDesc">
               洗足学園大学音楽学部声楽科卒業。
               二期会オペラスタジオ・マスタークラス終了。

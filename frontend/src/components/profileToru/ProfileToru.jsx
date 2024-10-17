@@ -47,6 +47,7 @@ export default function ProfileToru() {
           <span className="instrumentsInfo">
             代表川幡宏氏制作２０００年モデル他
           </span>
+          <img src="./toru'sCello.jpg" className="profileContentsImg"></img>
         </div>
       </div>
     </>
