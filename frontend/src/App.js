@@ -11,38 +11,23 @@ import Access from "./pages/access/Access";
 import PriceList from "./pages/priceList/PriceList";
 import InquiryPage from "./pages/inquiryPage/InquiryPage";
 import Shop from "./pages/shop/Shop";
+import ScrollToTop from "./ScrollToTop"; // ScrollToTopをインポート
 
 function App() {
   return (
     <Router>
+      {/* ページ遷移時に最上部にスクロール */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
-      <Routes>
         <Route path="/profile" element={<Profile />} />
-      </Routes>
-      <Routes>
         <Route path="/musiclesson" element={<MusicLesson />} />
-      </Routes>
-      <Routes>
         <Route path="/concert" element={<Concert />} />
-      </Routes>
-      <Routes>
-        <Route path="/priceList" element={<PriceList />} />
-      </Routes>
-      <Routes>
-        <Route path="/vocalLesson" element={<VocalLesson />} />
-      </Routes>
-      <Routes>
+        <Route path="/pricelist" element={<PriceList />} />
+        <Route path="/vocallesson" element={<VocalLesson />} />
         <Route path="/blog" element={<Blog />} />
-      </Routes>
-      <Routes>
         <Route path="/access" element={<Access />} />
-      </Routes>
-      <Routes>
         <Route path="/inquiry" element={<InquiryPage />} />
-      </Routes>
-      <Routes>
         <Route path="/shop" element={<Shop />} />
       </Routes>
     </Router>
