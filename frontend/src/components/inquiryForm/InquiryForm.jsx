@@ -150,8 +150,8 @@ export default function InquiryForm() {
       </Grid>
       <div className="underInquiryForm">
         <span className="underInquiryFormText">
-          当サイトでは Gmail を使用しております。48
-          時間を超えて返信の無い場合は以下をご確認ください。
+          当サイトでは Gmail
+          を使用しております。48時間を超えて返信の無い場合は以下をご確認ください。
         </span>
         <span className="underInquiryFormText">
           *迷惑メールフォルダ内をご確認下さい。
@@ -162,6 +162,12 @@ export default function InquiryForm() {
           直接お電話でのお問い合わせ頂く場合は、レッスン中や時間外は留守番電話になっておりますので、メッセージを入れて頂ければ折り返しご連絡させて頂きます。
         </span>
         <span className="underInquiryFormText">TEL 045-391-5599</span>
+      </div>
+      <div className="privacyPolicy">
+        <sapn className="privacyPolicyTitle">プライバシーポリシー</sapn>
+        <span className="privacyPolicyText">
+          「『ムジーク・らぼあ』では個人情報保護に関する法令及びその他の規範を尊重し、個人情報の適正な取得、保有及び利用に努めます。ご送信いただいた個人情報はご連絡目的以外で利用したり無断で第三者に開示・提供することはございません。」
+        </span>
       </div>
     </>
   );
