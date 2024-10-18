@@ -166,7 +166,7 @@ export default function InquiryForm() {
       <div className="privacyPolicy">
         <sapn className="privacyPolicyTitle">プライバシーポリシー</sapn>
         <span className="privacyPolicyText">
-          「『ムジーク・らぼあ』では個人情報保護に関する法令及びその他の規範を尊重し、個人情報の適正な取得、保有及び利用に努めます。ご送信いただいた個人情報はご連絡目的以外で利用したり無断で第三者に開示・提供することはございません。」
+          『ムジーク・らぼあ』では個人情報保護に関する法令及びその他の規範を尊重し、個人情報の適正な取得、保有及び利用に努めます。ご送信いただいた個人情報はご連絡目的以外で利用したり無断で第三者に開示・提供することはございません。
         </span>
       </div>
     </>
