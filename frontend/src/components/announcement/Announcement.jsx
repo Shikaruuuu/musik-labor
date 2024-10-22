@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { Box, Paper, Typography } from "@mui/material";
 
 const Announcement = () => {
   const [announcements, setAnnouncements] = useState([]);
@@ -16,16 +16,58 @@ const Announcement = () => {
     fetchData();
   }, []);
 
+  const formatDate = (datetime) => {
+    const date = new Date(datetime);
+    return `${date.getFullYear()}年${
+      date.getMonth() + 1
+    }月${date.getDate()}日 ${date.getHours()}時${date.getMinutes()}分`;
+  };
+
   return (
-    <div>
+    <Box
+      sx={{
+        maxWidth: 600,
+        width: "80%",
+        maxHeight: 400,
+        overflowY: "auto",
+        overflowX: "hidden",
+        p: 2,
+        mx: "auto",
+        my: 4,
+        bgcolor: "#f7f7f7",
+        "&::-webkit-scrollbar": {
+          width: "0.4em",
+        },
+        "&::-webkit-scrollbar-track": {
+          boxShadow: "inset 0 0 6px rgba(0,0,0,0.1)",
+          webkitBoxShadow: "inset 0 0 6px rgba(0,0,0,0.1)",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          backgroundColor: "rgba(0,0,0,.1)",
+          outline: "1px solid slategrey",
+        },
+      }}>
+      <Typography
+        variant="h5"
+        component="h2"
+        sx={{ textAlign: "center", mt: 2, mb: 4 }}>
+        お知らせ
+      </Typography>
       {announcements.map((announce, index) => (
-        <div key={index}>
-          <h2>{announce.title}</h2>
-          <p>{announce.datetime}</p>
-          <p>{announce.content}</p>
-        </div>
+        <Paper
+          key={index}
+          elevation={3}
+          sx={{ p: 2, my: 2, wordWrap: "break-word" }}>
+          <Typography variant="h6" component="h2">
+            {announce.title}
+          </Typography>
+          <Typography color="textSecondary">
+            {formatDate(announce.datetime)}
+          </Typography>
+          <Typography variant="body1">{announce.content}</Typography>
+        </Paper>
       ))}
-    </div>
+    </Box>
   );
 };
 
