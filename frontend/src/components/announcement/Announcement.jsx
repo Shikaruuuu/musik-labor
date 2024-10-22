@@ -21,7 +21,7 @@ const Announcement = () => {
       {announcements.map((announce, index) => (
         <div key={index}>
           <h2>{announce.title}</h2>
-          <p>{announce.date}</p>
+          <p>{announce.datetime}</p>
           <p>{announce.content}</p>
         </div>
       ))}
