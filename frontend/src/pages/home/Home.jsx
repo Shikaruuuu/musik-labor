@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Hamburger from "../../components/hamburger/Hamburger";
 import HomeDesCription from "../../components/homeDescription/HomeDescription";
 import HomeMenu from "../../components/homeMenu/HomeMenu";
+import Announcement from "../../components/announcement/Announcement";
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -29,6 +30,7 @@ export default function Home() {
       {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
       <HomeDesCription />
+      <Announcement />
       <HomeMenu />
     </>
   );
