@@ -116,7 +116,8 @@ const Concert = () => {
               <li className="priceList">アルプス一万尺</li>
               <li className="priceList">小さい秋見つけた</li>
               <li className="priceList">リンゴの唄</li>
-              <li className="priceList">われは海の子学生時代</li>
+              <li className="priceList">われは海の子</li>
+              <li className="priceList">学生時代</li>
               <li className="priceList">夏の思い出</li>
               <li className="priceList">少年時代</li>
               <li className="priceList">瀬戸の花嫁</li>
