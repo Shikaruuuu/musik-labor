@@ -98,6 +98,11 @@ export default function Hamburger() {
               <span className="humbergerListItemText">提携工房</span>
             </li>
           </Link>
+          <div className="close-icon" onClick={() => setIsOpen(!isOpen)}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">メニューを閉じる</span>
+            </li>
+          </div>
         </ul>
       )}
     </div>
