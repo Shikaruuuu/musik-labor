@@ -1,0 +1,16 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.homeContents{
+    display: flex;
+    flex-direction: column; 
+}
+
+.homeDecCriptionContents{
+    margin-top: 80px;
+}
+
+.homeDecCriptionContentsMobile{
+    margin-top: 10px;
+}

@@ -1,9 +1,9 @@
-.HomeDescription{
+.HomeDescriptionMobile{
     display: flex;
     flex-direction: column;
 }
 
-.homeDescriptionText{
+.homeDescriptionMobileText{
     align-self: center;
     margin-top: 5px;
     font-weight: bold;
