@@ -16,88 +16,88 @@ export default function Hamburger() {
       </div>
       {isOpen && (
         <ul className="hamburger-items">
-          <li className="navbarListItem">
-            <Link
-              to="/"
-              className="navbarLink"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">ホーム</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/musiclesson"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">チェロ教室</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/vocalLesson"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">声楽教室</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/concert"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">出張演奏</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/priceList"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">料金表</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/profile"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">プロフィール</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/access"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">アクセス</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/inquiry"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">お問い合わせ</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="https://musiklabor.hatenablog.com/"
-              target="_blank"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">ブログ</span>
+          <Link
+            to="/"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">ホーム</span>
+            </li>
+          </Link>
+          <Link
+            to="/musiclesson"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">チェロ教室</span>
+            </li>
+          </Link>
+          <Link
+            to="/vocalLesson"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">声楽教室</span>
+            </li>
+          </Link>
+          <Link
+            to="/concert"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">出張演奏</span>
+            </li>
+          </Link>
+          <Link
+            to="/priceList"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">料金表</span>
+            </li>
+          </Link>
+          <Link
+            to="/profile"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">プロフィール</span>
+            </li>
+          </Link>
+          <Link
+            to="/access"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">アクセス</span>
+            </li>
+          </Link>
+          <Link
+            to="/inquiry"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">お問い合わせ</span>
+            </li>
+          </Link>
+          <Link
+            to="https://musiklabor.hatenablog.com/"
+            target="_blank"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">ブログ</span>
               <LaunchIcon />
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/shop"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
-              <span className="navbarListItemText">提携工房</span>
-            </Link>
-          </li>
+            </li>
+          </Link>
+          <Link
+            to="/shop"
+            className="humbergerLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="humbergerListItem">
+              <span className="humbergerListItemText">提携工房</span>
+            </li>
+          </Link>
         </ul>
       )}
     </div>

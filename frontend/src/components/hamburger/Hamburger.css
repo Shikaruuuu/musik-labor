@@ -59,6 +59,23 @@
     display: block;
 }
 
-.navbarListItemText{
+.humbergerListItemText{
     margin-right: 20px;
+}
+
+.humbergerListItem{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 游ゴシック体, "Yu Gothic", 游ゴシック, YuGothic, Verdana, メイリオ, Meiryo, "M+ 1p", sans-serif;
+    align-items: center;
+    box-shadow: 3px 7px 13px -10px #65789f;
+    cursor: pointer;
+  }
+
+  .humbergerListItem:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: all 0.3s;
 }
