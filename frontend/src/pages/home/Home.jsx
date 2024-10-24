@@ -6,6 +6,7 @@ import Hamburger from "../../components/hamburger/Hamburger";
 import HomeDesCription from "../../components/homeDescription/HomeDescription";
 import HomeMenu from "../../components/homeMenu/HomeMenu";
 import Announcement from "../../components/announcement/Announcement";
+import HeaderMobile from "../../components/headerMobile/HeaderMobile";
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -26,7 +27,8 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      {/* 1036px未満かどうかでヘッダーを切り替える */}
+      {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
       {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
       <HomeDesCription />

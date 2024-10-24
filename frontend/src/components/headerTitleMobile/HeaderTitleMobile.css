@@ -1,15 +1,11 @@
-.headerTitleMobile{
-    display: flex;
-    flex-direction: column;
-    margin-top: 45px;
-}
-
 .mobileTitle{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
     color: #333;
     text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); 
     margin-left: 23px;
     align-self: center;
+    cursor: pointer;
+    z-index: 100;
 }
