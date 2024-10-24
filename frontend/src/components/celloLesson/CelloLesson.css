@@ -1,5 +1,9 @@
 .celloLesson{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     margin-top: 60px;
+    width: 80%;
 }
 
 .celloLessonTitle{
@@ -11,7 +15,7 @@
 .celloTeacherName{
     align-self: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -97,7 +101,7 @@
 }
 .trialLessonDescription{
     font-weight: bold;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .lessonContents{

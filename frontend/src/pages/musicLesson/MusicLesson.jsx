@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Hamburger from "../../components/hamburger/Hamburger";
 import CelloLesson from "../../components/celloLesson/CelloLesson";
 import HeaderMobile from "../../components/headerMobile/HeaderMobile";
+import { Box } from "@mui/material";
 
 const MusicLesson = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -24,11 +25,34 @@ const MusicLesson = () => {
   }, []);
   return (
     <>
-      {/* 1036px未満かどうかでヘッダーを切り替える */}
-      {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
-      {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
-      {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
-      <CelloLesson />
+      <div className="musicLesson">
+        <div className="headerItems">
+          {/* 1036px未満かどうかでヘッダーを切り替える */}
+          {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
+          {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
+          {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
+        </div>
+        {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
+        {windowWidth >= 1036 ? (
+          <div className="celloLessonWrapper">
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                borderColor: "black",
+                backgroundColor: "#e4d6ce",
+                width: "70%",
+              }}>
+              <CelloLesson />
+            </Box>
+          </div>
+        ) : (
+          <div className="celloLessonWrapperMobile">
+            <CelloLesson />
+          </div>
+        )}
+      </div>
     </>
   );
 };
