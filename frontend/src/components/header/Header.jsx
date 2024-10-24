@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import HeaderTitle from "../headerTitle/HeaderTitle";
-import HeaderTitleMobile from "../headerTitleMobile/HeaderTitleMobile";
 import HeaderMessage from "../headerMessage/HeaderMessage";
 
 export default function Header() {
