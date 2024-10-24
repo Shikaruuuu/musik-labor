@@ -3,7 +3,7 @@
     flex-direction: column;
     align-content: center;
     margin-top: 60px;
-    width: 80%;
+    width: 90%;
 }
 
 .celloLessonTitle{
@@ -15,7 +15,7 @@
 .celloTeacherName{
     align-self: center;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
