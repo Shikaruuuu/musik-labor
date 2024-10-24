@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Hamburger from "../../components/hamburger/Hamburger";
 import ProfileToru from "../../components/profileToru/ProfileToru";
 import ProfileAkemi from "../../components/profileAkemi/ProfileAkemi";
+import HeaderMobile from "../../components/headerMobile/HeaderMobile";
 
 const Profile = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -25,7 +26,8 @@ const Profile = () => {
   return (
     <>
       <div className="profile">
-        <Header />
+        {/* 1036px未満かどうかでヘッダーを切り替える */}
+        {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
         {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
         {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
         <ProfileToru />

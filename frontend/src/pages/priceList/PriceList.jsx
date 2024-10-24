@@ -13,6 +13,7 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
+import HeaderMobile from "../../components/headerMobile/HeaderMobile";
 
 const PriceList = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -133,7 +134,8 @@ const PriceList = () => {
 
   return (
     <>
-      <Header />
+      {/* 1036px未満かどうかでヘッダーを切り替える */}
+      {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
       {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
       <div className="pricePageTitle">料金表</div>

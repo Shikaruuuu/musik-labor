@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import Hamburger from "../../components/hamburger/Hamburger";
 import CelloLesson from "../../components/celloLesson/CelloLesson";
+import HeaderMobile from "../../components/headerMobile/HeaderMobile";
 
 const MusicLesson = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -23,7 +24,8 @@ const MusicLesson = () => {
   }, []);
   return (
     <>
-      <Header />
+      {/* 1036px未満かどうかでヘッダーを切り替える */}
+      {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
       {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
       <CelloLesson />
