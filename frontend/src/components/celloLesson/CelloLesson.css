@@ -92,6 +92,12 @@
     margin-right: 20px;
 }
 
+.celloPriceTableWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .trialLesson{
     display: flex;
     flex-direction: column;

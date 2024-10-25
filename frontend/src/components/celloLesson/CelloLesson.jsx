@@ -1,6 +1,86 @@
+import {
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography,
+} from "@mui/material";
 import "./CelloLesson.css";
+import { useEffect, useState } from "react";
 
 const CelloLesson = () => {
+  function formatService(service) {
+    const parts = service.split("（");
+    if (parts.length > 1) {
+      // 「（」を前のテキストに含めて改行します。
+      return (
+        <>
+          {parts[0]}
+          <br />（{parts[1]}
+        </>
+      );
+    }
+    return service;
+  }
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // ウィンドウサイズが変更された時にサイズを更新する
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // コンポーネントがアンマウントされた際にイベントリスナーを削除
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const pricingData1 = {
+    celloLessons: [
+      {
+        service: "チェロレッスン（大人）",
+        duration: "60 分",
+        price: "¥10,000",
+      },
+      {
+        service: "チェロレッスン（高校生以下）",
+        duration: "45 分",
+        price: "¥7,000",
+      },
+    ],
+  };
+  const pricingData2 = {
+    visitLessons: [
+      {
+        service: "出張レッスン（大人）",
+        duration: "60 分",
+        price: "¥15,000",
+      },
+      {
+        service: "出張レッスン（高校生以下）",
+        duration: "45 分",
+        price: "¥11,000",
+      },
+    ],
+  };
+
+  const categoryNames = {
+    celloLessons: "チェロ教室",
+    visitLessons: (
+      <>
+        出張レッスン（神奈川県内）
+        <br />
+        ※県外別途相談
+      </>
+    ),
+  };
+
   return (
     <>
       <div className="celloLesson">
@@ -30,9 +110,92 @@ const CelloLesson = () => {
             <span className="priceTitleText">
               １レッスン（サイレントチェロ含む）
             </span>
-            <ul className="priceList">大　　　人：60 分　10,000 円</ul>
-            <ul className="priceList">高校生以下：45 分 　 7,000 円</ul>
-            <ul className="priceList">*無料体験レッスン：30 分</ul>
+          </div>
+          <div className="celloPriceTableWrapper">
+            {/* 1036px未満かどうかで料金表のサイズを切り替える */}
+            {windowWidth >= 1036 ? (
+              <TableContainer
+                component={Paper}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: "20px",
+                  width: "500%",
+                  maxWidth: 1000,
+                }}>
+                {Object.entries(pricingData1).map(([key, value], idx) => (
+                  <>
+                    <Typography
+                      variant="h6"
+                      component="div"
+                      sx={{ marginY: 2, marginLeft: 2 }}>
+                      {categoryNames[key]} {/* カテゴリー名を表示 */}
+                    </Typography>
+                    <Table key={idx}>
+                      <TableHead>
+                        <TableRow>
+                          <TableCell align="left">サービス</TableCell>
+                          <TableCell align="left">時間</TableCell>
+                          <TableCell align="left">料金</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {value.map((row, index) => (
+                          <TableRow key={index}>
+                            <TableCell component="th" scope="row">
+                              {formatService(row.service)}
+                            </TableCell>
+                            <TableCell align="left">{row.duration}</TableCell>
+                            <TableCell align="left">{row.price}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </>
+                ))}
+              </TableContainer>
+            ) : (
+              <TableContainer
+                component={Paper}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: "20px",
+                  width: "100%",
+                  maxWidth: 350,
+                }}>
+                {Object.entries(pricingData1).map(([key, value], idx) => (
+                  <>
+                    <Typography
+                      variant="h6"
+                      component="div"
+                      sx={{ marginY: 2, marginLeft: 2 }}>
+                      {categoryNames[key]} {/* カテゴリー名を表示 */}
+                    </Typography>
+                    <Table key={idx}>
+                      <TableHead>
+                        <TableRow>
+                          <TableCell align="left">サービス</TableCell>
+                          <TableCell align="left">時間</TableCell>
+                          <TableCell align="left">料金</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {value.map((row, index) => (
+                          <TableRow key={index}>
+                            <TableCell component="th" scope="row">
+                              {formatService(row.service)}
+                            </TableCell>
+                            <TableCell align="left">{row.duration}</TableCell>
+                            <TableCell align="left">{row.price}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </>
+                ))}
+              </TableContainer>
+            )}
           </div>
           <div className="trialLesson">
             <span className="trialLessonDescription">
@@ -61,10 +224,93 @@ const CelloLesson = () => {
             <span className="priceTitleText">
               １レッスン（サイレントチェロ含む）
             </span>
+            <div className="celloPriceTableWrapper">
+              {/* 1036px未満かどうかで料金表のサイズを切り替える */}
+              {windowWidth >= 1036 ? (
+                <TableContainer
+                  component={Paper}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginTop: "20px",
+                    width: "500%",
+                    maxWidth: 1000,
+                  }}>
+                  {Object.entries(pricingData2).map(([key, value], idx) => (
+                    <>
+                      <Typography
+                        variant="h6"
+                        component="div"
+                        sx={{ marginY: 2, marginLeft: 2 }}>
+                        {categoryNames[key]} {/* カテゴリー名を表示 */}
+                      </Typography>
+                      <Table key={idx}>
+                        <TableHead>
+                          <TableRow>
+                            <TableCell align="left">サービス</TableCell>
+                            <TableCell align="left">時間</TableCell>
+                            <TableCell align="left">料金</TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {value.map((row, index) => (
+                            <TableRow key={index}>
+                              <TableCell component="th" scope="row">
+                                {formatService(row.service)}
+                              </TableCell>
+                              <TableCell align="left">{row.duration}</TableCell>
+                              <TableCell align="left">{row.price}</TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </>
+                  ))}
+                </TableContainer>
+              ) : (
+                <TableContainer
+                  component={Paper}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginTop: "20px",
+                    width: "100%",
+                    maxWidth: 350,
+                  }}>
+                  {Object.entries(pricingData2).map(([key, value], idx) => (
+                    <>
+                      <Typography
+                        variant="h6"
+                        component="div"
+                        sx={{ marginY: 2, marginLeft: 2 }}>
+                        {categoryNames[key]} {/* カテゴリー名を表示 */}
+                      </Typography>
+                      <Table key={idx}>
+                        <TableHead>
+                          <TableRow>
+                            <TableCell align="left">サービス</TableCell>
+                            <TableCell align="left">時間</TableCell>
+                            <TableCell align="left">料金</TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {value.map((row, index) => (
+                            <TableRow key={index}>
+                              <TableCell component="th" scope="row">
+                                {formatService(row.service)}
+                              </TableCell>
+                              <TableCell align="left">{row.duration}</TableCell>
+                              <TableCell align="left">{row.price}</TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </>
+                  ))}
+                </TableContainer>
+              )}
+            </div>
           </div>
-          <ul className="priceList">大　　　人：60 分 15,000 円～ </ul>
-          <ul className="priceList">高校生以下：45 分 11,000 円～</ul>
-          <span>上記は神奈川県内の出張料金です。県外は別途ご相談下さい。</span>
         </div>
         <div className="lessonContents">
           <div className="LessonConttentsTitle">
