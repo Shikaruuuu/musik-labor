@@ -75,17 +75,6 @@ const CelloLesson = () => {
     ],
   };
 
-  const categoryNames = {
-    celloLessons: "チェロ教室",
-    visitLessons: (
-      <>
-        出張レッスン（神奈川県内）
-        <br />
-        ※県外別途相談
-      </>
-    ),
-  };
-
   return (
     <>
       <div className="celloLesson">
