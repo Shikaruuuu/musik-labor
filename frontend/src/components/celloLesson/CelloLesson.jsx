@@ -6,7 +6,6 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  Typography,
 } from "@mui/material";
 import "./CelloLesson.css";
 import { useEffect, useState } from "react";

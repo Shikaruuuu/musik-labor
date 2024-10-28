@@ -31,7 +31,7 @@ const VocalLesson = () => {
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
       {/* 1036px未満のときのみ茶色のBoxを表示 */}
       {windowWidth >= 1036 ? (
-        <div className="celloLessonWrapper">
+        <div className="vocalLessonWrapper">
           <Box
             sx={{
               display: "flex",
@@ -45,7 +45,7 @@ const VocalLesson = () => {
           </Box>
         </div>
       ) : (
-        <div className="celloLessonWrapperMobile">
+        <div className="vocalLessonWrapperMobile">
           <VocalMusicLesson />
         </div>
       )}
