@@ -2,6 +2,21 @@ import React, { useState, useEffect } from "react";
 import "./ProfileAkemi.css";
 
 export default function ProfileAkemi() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // ウィンドウサイズが変更された時にサイズを更新する
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // コンポーネントがアンマウントされた際にイベントリスナーを削除
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className="profileToru">
@@ -26,9 +41,18 @@ export default function ProfileAkemi() {
             <li className="backgroundDesc">
               ２０１６年東京大田区アプリコホールにおいて自身初のリサイタルを開催し、各方面から好評を博す。
             </li>
+          </ul>
+          {/* 1036px未満かどうかで写真の大きさを切り替える */}
+          {windowWidth >= 1036 ? (
             <img
               src="./akemi'sRecital.jpg"
-              className="profileContentsImg"></img>
+              className="profileContentsImgPC"></img>
+          ) : (
+            <img
+              src="./akemi'sRecital.jpg"
+              className="profileContentsImgMobile"></img>
+          )}
+          <ul>
             <li className="backgroundDesc">
               洗足学園大学音楽学部声楽科卒業。
               二期会オペラスタジオ・マスタークラス終了。

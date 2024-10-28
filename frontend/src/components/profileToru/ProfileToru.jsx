@@ -2,6 +2,21 @@ import React, { useState, useEffect } from "react";
 import "./ProfileToru.css";
 
 export default function ProfileToru() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // ウィンドウサイズが変更された時にサイズを更新する
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // コンポーネントがアンマウントされた際にイベントリスナーを削除
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className="profileToru">
@@ -47,7 +62,14 @@ export default function ProfileToru() {
           <span className="instrumentsInfo">
             代表川幡宏氏制作２０００年モデル他
           </span>
-          <img src="./toru'sCello.jpg" className="profileContentsImg"></img>
+          {/* 1036px未満かどうかで写真の大きさを切り替える */}
+          {windowWidth >= 1036 ? (
+            <img src="./toru'sCello.jpg" className="profileContentsImgPC"></img>
+          ) : (
+            <img
+              src="./toru'sCello.jpg"
+              className="profileContentsImgMobile"></img>
+          )}
         </div>
       </div>
     </>
