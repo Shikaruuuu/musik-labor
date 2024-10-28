@@ -1,14 +1,17 @@
-/* body {
-    background-image: url("../../../public/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: 100%;
-    width: auto;
-    height: 400px;
-  } */
-
 .music-lesson {
     position: absolute;
     top: 60%;
+}
+
+.celloLessonWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.celloLessonWrapperMobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

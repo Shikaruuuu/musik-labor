@@ -1,6 +1,20 @@
+.inquiryWrapper{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
 .underInquiryForm{
     display: flex;
     flex-direction: column;
+}
+
+.underInquiryFormTextTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .underInquiryFormText{
@@ -22,4 +36,10 @@
 .privacyPolicyText{
     display: flex;
     margin-bottom: 20px;
+}
+
+.inquiryButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

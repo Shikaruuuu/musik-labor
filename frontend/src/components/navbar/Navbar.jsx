@@ -8,88 +8,88 @@ export default function Navbar() {
     <div className="navbar">
       <div className="navbarWrapper">
         <ul className="navbarList">
-          <li className="navbarListItem">
-            <Link
-              to="/"
-              className="navbarLink"
-              style={{ textDecoration: "none", color: "black" }}>
+          <Link
+            to="/"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">ホーム</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/musiclesson"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="/musiclesson"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">チェロ教室</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/vocalLesson"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="/vocalLesson"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">声楽教室</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/concert"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="/concert"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">出張演奏</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/priceList"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="/priceList"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">料金表</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/profile"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="/profile"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">プロフィール</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/access"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="/access"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">アクセス</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/inquiry"
-              target="_blank"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="/inquiry"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">お問い合わせ</span>
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="https://musiklabor.hatenablog.com/"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="https://musiklabor.hatenablog.com/"
+            target="_blank"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">ブログ</span>
               <LaunchIcon />
-            </Link>
-          </li>
-          <li className="navbarListItem">
-            <Link
-              to="/shop"
-              className="navbarListItemText"
-              style={{ textDecoration: "none", color: "black" }}>
+            </li>
+          </Link>
+          <Link
+            to="/shop"
+            className="navbarLink"
+            style={{ textDecoration: "none", color: "black" }}>
+            <li className="navbarListItem">
               <span className="navbarListItemText">提携工房</span>
-            </Link>
-          </li>
+            </li>
+          </Link>
         </ul>
       </div>
     </div>

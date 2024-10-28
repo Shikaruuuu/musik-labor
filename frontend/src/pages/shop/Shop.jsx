@@ -3,6 +3,7 @@ import "./Shop.css";
 import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import Hamburger from "../../components/hamburger/Hamburger";
+import HeaderMobile from "../../components/headerMobile/HeaderMobile";
 
 export default function Shop() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -23,7 +24,8 @@ export default function Shop() {
 
   return (
     <>
-      <Header />
+      {/* 1036px未満かどうかでヘッダーを切り替える */}
+      {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
       {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
       <div className="inPreparing">工事中</div>

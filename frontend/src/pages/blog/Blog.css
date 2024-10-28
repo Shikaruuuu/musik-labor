@@ -1,9 +1,0 @@
-.blogLink{
-    display: flex;
-    flex-direction: column;
-}
-
-.blogLinkText{
-    margin-top: 100px;
-    align-self: center;
-}

@@ -1,0 +1,12 @@
+.vocalLessonWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.vocalLessonWrapperMobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

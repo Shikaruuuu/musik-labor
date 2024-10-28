@@ -1,6 +1,79 @@
+import {
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@mui/material";
 import "./CelloLesson.css";
+import { useEffect, useState } from "react";
 
 const CelloLesson = () => {
+  function formatService(service) {
+    const parts = service.split("（");
+    if (parts.length > 1) {
+      // 「（」を前のテキストに含めて改行します。
+      return (
+        <>
+          {parts[0]}
+          <br />（{parts[1]}
+        </>
+      );
+    }
+    return service;
+  }
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // ウィンドウサイズが変更された時にサイズを更新する
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // コンポーネントがアンマウントされた際にイベントリスナーを削除
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const pricingData1 = {
+    celloLessons: [
+      {
+        service: "チェロレッスン（大人）",
+        duration: "60 分",
+        price: "¥10,000",
+      },
+      {
+        service: "チェロレッスン（高校生以下）",
+        duration: "45 分",
+        price: "¥7,000",
+      },
+      {
+        service: "*無料体験レッスン（大人・高校生以下）",
+        duration: "30 分",
+        price: "¥0",
+      },
+    ],
+  };
+  const pricingData2 = {
+    visitLessons: [
+      {
+        service: "出張レッスン（大人）",
+        duration: "60 分",
+        price: "¥15,000",
+      },
+      {
+        service: "出張レッスン　　　　（高校生以下）",
+        duration: "45 分",
+        price: "¥11,000",
+      },
+    ],
+  };
+
   return (
     <>
       <div className="celloLesson">
@@ -15,14 +88,26 @@ const CelloLesson = () => {
           <span className="celloDescriptionUpperText">
             またチェロは後ろから抱きかかえる様に構える事から、弦楽器の中で最も自然体で構える事が出来る楽器として、体に無理なく演奏出来る所がお勧めのポイントです。
           </span>
-          <img src="./kitajima-san.jpg" className="lessonImg"></img>
+          {/* 1036px未満かどうかで写真の大きさを切り替える */}
+          {windowWidth >= 1036 ? (
+            <img src="./kitajima-san.jpg" className="celloLessonImgPC"></img>
+          ) : (
+            <img
+              src="./kitajima-san.jpg"
+              className="celloLessonImgMobile"></img>
+          )}
           <span className="celloDescriptionUpperText">
             なお当教室では『サイレントチェロ』でのレッスンも行っております。
           </span>
           <span className="celloDescriptionUpperText">
             サイレントチェロでのレッスンは、基本的にはギターアンプを使い実際に音を出してのレッスンを行います。
           </span>
-          <img src="./seyaHall.jpg" className="lessonImg"></img>
+          {/* 1036px未満かどうかで写真の大きさを切り替える */}
+          {windowWidth >= 1036 ? (
+            <img src="./seyaHall.jpg" className="celloLessonImgPC"></img>
+          ) : (
+            <img src="./seyaHall.jpg" className="celloLessonImgMobile"></img>
+          )}
         </div>
         <div className="celloDescriptionMiddle">
           <div className="priceTitle">
@@ -30,22 +115,97 @@ const CelloLesson = () => {
             <span className="priceTitleText">
               １レッスン（サイレントチェロ含む）
             </span>
-            <ul className="priceList">大　　　人：60 分　10,000 円</ul>
-            <ul className="priceList">高校生以下：45 分 　 7,000 円</ul>
-            <ul className="priceList">*無料体験レッスン：30 分</ul>
           </div>
-          <div className="trialLesson">
-            <span className="trialLessonDescription">
-              レッスンを行う上で生徒さんと
-            </span>
-            <span className="trialLessonDescription">
-              講師のコミュニケーションは
-            </span>
-            <span className="trialLessonDescription">
-              とても重要と考えます。
-            </span>
-            <span className="trialLessonDescription">
-              是非レッスンを体験してみて下さい
+          <div className="celloPriceTableWrapper">
+            {/* 1036px未満かどうかで料金表のサイズを切り替える */}
+            {windowWidth >= 1036 ? (
+              <TableContainer
+                component={Paper}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: "20px",
+                  width: "500%",
+                  maxWidth: 1000,
+                }}>
+                {Object.entries(pricingData1).map(([key, value], idx) => (
+                  <>
+                    <Table key={idx} sx={{ width: "100%" }}>
+                      <TableHead>
+                        <TableRow>
+                          <TableCell
+                            align="left"
+                            sx={{ fontSize: "20px" }}></TableCell>
+                          <TableCell align="left" sx={{ fontSize: "20px" }}>
+                            時間
+                          </TableCell>
+                          <TableCell align="left" sx={{ fontSize: "20px" }}>
+                            料金
+                          </TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {value.map((row, index) => (
+                          <TableRow key={index}>
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              sx={{ fontSize: "20px" }}>
+                              {formatService(row.service)}
+                            </TableCell>
+                            <TableCell align="left" sx={{ fontSize: "20px" }}>
+                              {row.duration}
+                            </TableCell>
+                            <TableCell align="left" sx={{ fontSize: "20px" }}>
+                              {row.price}
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </>
+                ))}
+              </TableContainer>
+            ) : (
+              <TableContainer
+                component={Paper}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: "20px",
+                  width: "100%",
+                  maxWidth: 350,
+                }}>
+                {Object.entries(pricingData1).map(([key, value], idx) => (
+                  <>
+                    <Table key={idx}>
+                      <TableHead>
+                        <TableRow>
+                          <TableCell align="left"></TableCell>
+                          <TableCell align="left">時間</TableCell>
+                          <TableCell align="left">料金</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {value.map((row, index) => (
+                          <TableRow key={index}>
+                            <TableCell component="th" scope="row">
+                              {formatService(row.service)}
+                            </TableCell>
+                            <TableCell align="left">{row.duration}</TableCell>
+                            <TableCell align="left">{row.price}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </>
+                ))}
+              </TableContainer>
+            )}
+          </div>
+          <div className="celloTrialLesson">
+            <span className="celloTrialLessonDescription">
+              レッスンを行う上で生徒さんと講師のコミュニケーションはとても重要と考えます。是非レッスンを体験してみて下さい
             </span>
           </div>
         </div>
@@ -61,10 +221,99 @@ const CelloLesson = () => {
             <span className="priceTitleText">
               １レッスン（サイレントチェロ含む）
             </span>
+            <div className="celloPriceTableWrapper">
+              {/* 1036px未満かどうかで料金表のサイズを切り替える */}
+              {windowWidth >= 1036 ? (
+                <TableContainer
+                  component={Paper}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginTop: "20px",
+                    width: "500%",
+                    maxWidth: 1000,
+                  }}>
+                  {Object.entries(pricingData2).map(([key, value], idx) => (
+                    <>
+                      <Table key={idx} sx={{ width: "100%" }}>
+                        <TableHead>
+                          <TableRow>
+                            <TableCell
+                              align="left"
+                              sx={{ fontSize: "20px" }}></TableCell>
+                            <TableCell align="left" sx={{ fontSize: "20px" }}>
+                              時間
+                            </TableCell>
+                            <TableCell align="left" sx={{ fontSize: "20px" }}>
+                              料金
+                            </TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {value.map((row, index) => (
+                            <TableRow key={index}>
+                              <TableCell
+                                component="th"
+                                scope="row"
+                                sx={{ fontSize: "20px" }}>
+                                {formatService(row.service)}
+                              </TableCell>
+                              <TableCell align="left" sx={{ fontSize: "20px" }}>
+                                {row.duration}
+                              </TableCell>
+                              <TableCell align="left" sx={{ fontSize: "20px" }}>
+                                {row.price}
+                              </TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </>
+                  ))}
+                </TableContainer>
+              ) : (
+                <TableContainer
+                  component={Paper}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    marginTop: "20px",
+                    width: "100%",
+                    maxWidth: 350,
+                  }}>
+                  {Object.entries(pricingData2).map(([key, value], idx) => (
+                    <>
+                      <Table key={idx}>
+                        <TableHead>
+                          <TableRow>
+                            <TableCell align="left"></TableCell>
+                            <TableCell align="left">時間</TableCell>
+                            <TableCell align="left">料金</TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {value.map((row, index) => (
+                            <TableRow key={index}>
+                              <TableCell component="th" scope="row">
+                                {formatService(row.service)}
+                              </TableCell>
+                              <TableCell align="left">{row.duration}</TableCell>
+                              <TableCell align="left">{row.price}</TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </>
+                  ))}
+                </TableContainer>
+              )}
+            </div>
+            <div className="visitLessonNote">
+              <span className="visitLessonNoteDescription">
+                上記は神奈川県内の出張料金です。県外は別途ご相談下さい。
+              </span>
+            </div>
           </div>
-          <ul className="priceList">大　　　人：60 分 15,000 円～ </ul>
-          <ul className="priceList">高校生以下：45 分 11,000 円～</ul>
-          <span>上記は神奈川県内の出張料金です。県外は別途ご相談下さい。</span>
         </div>
         <div className="lessonContents">
           <div className="LessonConttentsTitle">
@@ -97,7 +346,12 @@ const CelloLesson = () => {
           <span className="celloDescriptionBottomText">
             合同レッスン練習会では個人レッスンとチェロアンサンブルを行います。
           </span>
-          <img src="./celloLesson.jpg" className="lessonImg"></img>
+          {/* 1036px未満かどうかで写真の大きさを切り替える */}
+          {windowWidth >= 1036 ? (
+            <img src="./celloLesson.jpg" className="celloLessonImgPC"></img>
+          ) : (
+            <img src="./celloLesson.jpg" className="celloLessonImgMobile"></img>
+          )}
           <span className="celloDescriptionBottomText">
             チェロを弾いてみたい、サイレントチェロでレッスンを受けたい、自宅や近所でレッスンを受けたい、その他ご希望やご要望がございましたらお気軽にお問い合わせ下さい。
           </span>

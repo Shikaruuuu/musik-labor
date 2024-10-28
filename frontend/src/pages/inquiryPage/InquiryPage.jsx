@@ -4,6 +4,8 @@ import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import Hamburger from "../../components/hamburger/Hamburger";
 import InquiryForm from "../../components/inquiryForm/InquiryForm";
+import HeaderMobile from "../../components/headerMobile/HeaderMobile";
+import { Box } from "@mui/material";
 
 export default function InquiryPage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -24,10 +26,30 @@ export default function InquiryPage() {
 
   return (
     <>
-      <Header />
+      {/* 1036px未満かどうかでヘッダーを切り替える */}
+      {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
       {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
-      <InquiryForm />
+      {/* 1036px未満のときのみ茶色のBoxを表示 */}
+      {windowWidth >= 1036 ? (
+        <div className="inquiryPageWrapper">
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              borderColor: "black",
+              backgroundColor: "#e4d6ce",
+              width: "70%",
+            }}>
+            <InquiryForm />
+          </Box>
+        </div>
+      ) : (
+        <div className="inquiryPageWrapperMobile">
+          <InquiryForm />
+        </div>
+      )}
     </>
   );
 }

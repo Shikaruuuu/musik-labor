@@ -1,0 +1,130 @@
+.consertGuide{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.consertGuideTitle{
+    align-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.concertImgPC{
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 600px;
+    max-width: 600px;
+}
+.concertImgMobile{
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 350px;
+    max-width: 350px;
+}
+
+.consertGuideDescription{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.consertGuideDescriptionText{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.consertContent{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.consertContentTitle{
+    align-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.consertContentDescription{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.consertContentDescriptionText{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.consertProgram{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.consertProgramTitle{
+    align-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.consertProgramDescription{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.consertProgramDescriptionText{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.programList{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+.consertPrice{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.consertPriceTitle{
+    align-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.concertPriceTableWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.concertDescriptionBottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.concertDescriptionBottomText{
+    font-size: 20px;
+    margin-bottom: 10px;
+}

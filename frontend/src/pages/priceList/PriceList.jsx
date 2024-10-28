@@ -12,7 +12,10 @@ import {
   TableRow,
   Paper,
   Typography,
+  Box,
 } from "@mui/material";
+import HeaderMobile from "../../components/headerMobile/HeaderMobile";
+import PriceListContents from "../../components/priceListContents/PriceListContents";
 
 const PriceList = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -133,176 +136,30 @@ const PriceList = () => {
 
   return (
     <>
-      <Header />
+      {/* 1036px未満かどうかでヘッダーを切り替える */}
+      {windowWidth >= 1036 ? <Header /> : <HeaderMobile />}
       {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
       {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
-      <div className="pricePageTitle">料金表</div>
-      <TableContainer
-        component={Paper}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          marginTop: "20px",
-          marginLeft: "30px",
-          justifyItems: "center",
-          maxWidth: 350,
-          alignSelf: "center",
-        }}>
-        {Object.entries(pricingData1).map(([key, value], idx) => (
-          <>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ marginY: 2, marginLeft: 2 }}>
-              {categoryNames[key]} {/* カテゴリー名を表示 */}
-            </Typography>
-            <Table key={idx}>
-              <TableHead>
-                <TableRow>
-                  <TableCell align="left">サービス</TableCell>
-                  <TableCell align="left">時間</TableCell>
-                  <TableCell align="left">料金</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {value.map((row, index) => (
-                  <TableRow key={index}>
-                    <TableCell component="th" scope="row">
-                      {formatService(row.service)}
-                    </TableCell>
-                    <TableCell align="left">{row.duration}</TableCell>
-                    <TableCell align="left">{row.price}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </>
-        ))}
-      </TableContainer>
-      <TableContainer
-        component={Paper}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          marginTop: "20px",
-          marginLeft: "30px",
-          justifyItems: "center",
-          maxWidth: 350,
-          alignSelf: "center",
-        }}>
-        {Object.entries(pricingData2).map(([key, value], idx) => (
-          <>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ marginY: 2, marginLeft: 2 }}>
-              {categoryNames[key]} {/* カテゴリー名を表示 */}
-            </Typography>
-            <Table key={idx}>
-              <TableHead>
-                <TableRow>
-                  <TableCell align="left">サービス</TableCell>
-                  <TableCell align="left">時間</TableCell>
-                  <TableCell align="left">料金</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {value.map((row, index) => (
-                  <TableRow key={index}>
-                    <TableCell component="th" scope="row">
-                      {formatService(row.service)}
-                    </TableCell>
-                    <TableCell align="left">{row.duration}</TableCell>
-                    <TableCell align="left">{row.price}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </>
-        ))}
-      </TableContainer>
-      <TableContainer
-        component={Paper}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          marginTop: "20px",
-          marginLeft: "30px",
-          justifyItems: "center",
-          maxWidth: 350,
-          alignSelf: "center",
-        }}>
-        {Object.entries(pricingData3).map(([key, value], idx) => (
-          <>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ marginY: 2, marginLeft: 2 }}>
-              {categoryNames[key]} {/* カテゴリー名を表示 */}
-            </Typography>
-            <Table key={idx}>
-              <TableHead>
-                <TableRow>
-                  <TableCell align="left">サービス</TableCell>
-                  <TableCell align="left">時間</TableCell>
-                  <TableCell align="left">料金</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {value.map((row, index) => (
-                  <TableRow key={index}>
-                    <TableCell component="th" scope="row">
-                      {formatService(row.service)}
-                    </TableCell>
-                    <TableCell align="left">{row.duration}</TableCell>
-                    <TableCell align="left">{row.price}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </>
-        ))}
-      </TableContainer>
-      <TableContainer
-        component={Paper}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          marginTop: "20px",
-          marginLeft: "30px",
-          justifyItems: "center",
-          maxWidth: 350,
-          alignSelf: "center",
-        }}>
-        {Object.entries(pricingData4).map(([key, value], idx) => (
-          <>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ marginY: 2, marginLeft: 2 }}>
-              {categoryNames[key]} {/* カテゴリー名を表示 */}
-            </Typography>
-            <Table key={idx}>
-              <TableHead>
-                <TableRow>
-                  <TableCell align="left">サービス</TableCell>
-                  <TableCell align="left">料金</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {value.map((row, index) => (
-                  <TableRow key={index}>
-                    <TableCell component="th" scope="row">
-                      {formatService(row.service)}
-                    </TableCell>
-                    <TableCell align="left">{row.price}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </>
-        ))}
-      </TableContainer>
+      {/* 1036px未満のときのみ茶色のBoxを表示 */}
+      {windowWidth >= 1036 ? (
+        <div className="priceTableWrapper">
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              borderColor: "black",
+              backgroundColor: "#e4d6ce",
+              width: "70%",
+            }}>
+            <PriceListContents />
+          </Box>
+        </div>
+      ) : (
+        <div className="priceTableWrapperMobile">
+          <PriceListContents />
+        </div>
+      )}
     </>
   );
 };

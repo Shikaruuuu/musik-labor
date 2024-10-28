@@ -6,7 +6,6 @@ import Profile from "./pages/profile/Profile";
 import MusicLesson from "./pages/musicLesson/MusicLesson";
 import Concert from "./pages/concert/Concert";
 import VocalLesson from "./pages/vocalLesson/VocalLesson";
-import Blog from "./pages/blog/Blog";
 import Access from "./pages/access/Access";
 import PriceList from "./pages/priceList/PriceList";
 import InquiryPage from "./pages/inquiryPage/InquiryPage";
@@ -25,7 +24,6 @@ function App() {
         <Route path="/concert" element={<Concert />} />
         <Route path="/pricelist" element={<PriceList />} />
         <Route path="/vocallesson" element={<VocalLesson />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="/access" element={<Access />} />
         <Route path="/inquiry" element={<InquiryPage />} />
         <Route path="/shop" element={<Shop />} />
