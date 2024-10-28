@@ -53,6 +53,11 @@ const CelloLesson = () => {
         duration: "45 分",
         price: "¥7,000",
       },
+      {
+        service: "*無料体験レッスン（大人・高校生）",
+        duration: "30 分",
+        price: "¥0",
+      },
     ],
   };
   const pricingData2 = {
@@ -63,7 +68,7 @@ const CelloLesson = () => {
         price: "¥15,000",
       },
       {
-        service: "出張レッスン（高校生以下）",
+        service: "出張レッスン 　　（高校生以下）",
         duration: "45 分",
         price: "¥11,000",
       },
@@ -125,28 +130,35 @@ const CelloLesson = () => {
                 }}>
                 {Object.entries(pricingData1).map(([key, value], idx) => (
                   <>
-                    <Typography
-                      variant="h6"
-                      component="div"
-                      sx={{ marginY: 2, marginLeft: 2 }}>
-                      {categoryNames[key]} {/* カテゴリー名を表示 */}
-                    </Typography>
-                    <Table key={idx}>
+                    <Table key={idx} sx={{ width: "100%" }}>
                       <TableHead>
                         <TableRow>
-                          <TableCell align="left">サービス</TableCell>
-                          <TableCell align="left">時間</TableCell>
-                          <TableCell align="left">料金</TableCell>
+                          <TableCell
+                            align="left"
+                            sx={{ fontSize: "20px" }}></TableCell>
+                          <TableCell align="left" sx={{ fontSize: "20px" }}>
+                            時間
+                          </TableCell>
+                          <TableCell align="left" sx={{ fontSize: "20px" }}>
+                            料金
+                          </TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody>
                         {value.map((row, index) => (
                           <TableRow key={index}>
-                            <TableCell component="th" scope="row">
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              sx={{ fontSize: "20px" }}>
                               {formatService(row.service)}
                             </TableCell>
-                            <TableCell align="left">{row.duration}</TableCell>
-                            <TableCell align="left">{row.price}</TableCell>
+                            <TableCell align="left" sx={{ fontSize: "20px" }}>
+                              {row.duration}
+                            </TableCell>
+                            <TableCell align="left" sx={{ fontSize: "20px" }}>
+                              {row.price}
+                            </TableCell>
                           </TableRow>
                         ))}
                       </TableBody>
@@ -166,16 +178,10 @@ const CelloLesson = () => {
                 }}>
                 {Object.entries(pricingData1).map(([key, value], idx) => (
                   <>
-                    <Typography
-                      variant="h6"
-                      component="div"
-                      sx={{ marginY: 2, marginLeft: 2 }}>
-                      {categoryNames[key]} {/* カテゴリー名を表示 */}
-                    </Typography>
                     <Table key={idx}>
                       <TableHead>
                         <TableRow>
-                          <TableCell align="left">サービス</TableCell>
+                          <TableCell align="left"></TableCell>
                           <TableCell align="left">時間</TableCell>
                           <TableCell align="left">料金</TableCell>
                         </TableRow>
@@ -197,18 +203,9 @@ const CelloLesson = () => {
               </TableContainer>
             )}
           </div>
-          <div className="trialLesson">
-            <span className="trialLessonDescription">
-              レッスンを行う上で生徒さんと
-            </span>
-            <span className="trialLessonDescription">
-              講師のコミュニケーションは
-            </span>
-            <span className="trialLessonDescription">
-              とても重要と考えます。
-            </span>
-            <span className="trialLessonDescription">
-              是非レッスンを体験してみて下さい
+          <div className="celloTrialLesson">
+            <span className="celloTrialLessonDescription">
+              レッスンを行う上で生徒さんと講師のコミュニケーションはとても重要と考えます。是非レッスンを体験してみて下さい
             </span>
           </div>
         </div>
@@ -238,28 +235,35 @@ const CelloLesson = () => {
                   }}>
                   {Object.entries(pricingData2).map(([key, value], idx) => (
                     <>
-                      <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ marginY: 2, marginLeft: 2 }}>
-                        {categoryNames[key]} {/* カテゴリー名を表示 */}
-                      </Typography>
-                      <Table key={idx}>
+                      <Table key={idx} sx={{ width: "100%" }}>
                         <TableHead>
                           <TableRow>
-                            <TableCell align="left">サービス</TableCell>
-                            <TableCell align="left">時間</TableCell>
-                            <TableCell align="left">料金</TableCell>
+                            <TableCell
+                              align="left"
+                              sx={{ fontSize: "20px" }}></TableCell>
+                            <TableCell align="left" sx={{ fontSize: "20px" }}>
+                              時間
+                            </TableCell>
+                            <TableCell align="left" sx={{ fontSize: "20px" }}>
+                              料金
+                            </TableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
                           {value.map((row, index) => (
                             <TableRow key={index}>
-                              <TableCell component="th" scope="row">
+                              <TableCell
+                                component="th"
+                                scope="row"
+                                sx={{ fontSize: "20px" }}>
                                 {formatService(row.service)}
                               </TableCell>
-                              <TableCell align="left">{row.duration}</TableCell>
-                              <TableCell align="left">{row.price}</TableCell>
+                              <TableCell align="left" sx={{ fontSize: "20px" }}>
+                                {row.duration}
+                              </TableCell>
+                              <TableCell align="left" sx={{ fontSize: "20px" }}>
+                                {row.price}
+                              </TableCell>
                             </TableRow>
                           ))}
                         </TableBody>
@@ -279,16 +283,10 @@ const CelloLesson = () => {
                   }}>
                   {Object.entries(pricingData2).map(([key, value], idx) => (
                     <>
-                      <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ marginY: 2, marginLeft: 2 }}>
-                        {categoryNames[key]} {/* カテゴリー名を表示 */}
-                      </Typography>
                       <Table key={idx}>
                         <TableHead>
                           <TableRow>
-                            <TableCell align="left">サービス</TableCell>
+                            <TableCell align="left"></TableCell>
                             <TableCell align="left">時間</TableCell>
                             <TableCell align="left">料金</TableCell>
                           </TableRow>
@@ -309,6 +307,11 @@ const CelloLesson = () => {
                   ))}
                 </TableContainer>
               )}
+            </div>
+            <div className="visitLessonNote">
+              <span className="visitLessonNoteDescription">
+                上記は神奈川県内の出張料金です。県外は別途ご相談下さい。
+              </span>
             </div>
           </div>
         </div>

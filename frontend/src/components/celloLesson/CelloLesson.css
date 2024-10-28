@@ -51,15 +51,14 @@
 .celloDescriptionMiddle{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     align-items: center;
 }
 
 .lessonDescriptionWrapper{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .lessonDescriptionTitle{
@@ -98,20 +97,20 @@
     align-items: center;
 }
 
-.trialLesson{
+.celloTrialLesson{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     align-items: center;
 }
-.trialLessonDescription{
+.celloTrialLessonDescription{
     font-weight: bold;
     font-size: 20px;
 }
 
 .lessonContents{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -135,36 +134,47 @@
 .LessonContentsDesctiptionUpper{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .LessonContentsDesctiptionMiddle{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .LessonContentsDesctiptionBottom{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .LessonContentsDesctiptionText{
     align-self: center;
     font-size: 20px;
-    margin-bottom: 5px;
 }
 
 .celloDescriptionBottom{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 10px;
     align-items: center;
 }
 
 .celloDescriptionBottomText{
     align-self: center;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.visitLessonNote{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.visitLessonNoteDescription{
+    font-size: 20px;
 }
