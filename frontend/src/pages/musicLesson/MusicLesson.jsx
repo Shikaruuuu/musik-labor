@@ -32,7 +32,7 @@ const MusicLesson = () => {
           {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
           {windowWidth >= 1036 ? <Navbar /> : <Hamburger />}
         </div>
-        {/* 1036px未満のときのみNavbar（ハンバーガーメニュー）を表示 */}
+        {/* 1036px未満のときのみ茶色のBoxを表示 */}
         {windowWidth >= 1036 ? (
           <div className="celloLessonWrapper">
             <Box
