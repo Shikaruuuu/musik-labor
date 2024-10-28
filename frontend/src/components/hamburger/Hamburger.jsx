@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Hamburger.css";
 import LaunchIcon from "@mui/icons-material/Launch";
+import DisabledByDefaultIcon from "@mui/icons-material/DisabledByDefault";
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,9 +100,14 @@ export default function Hamburger() {
             </li>
           </Link>
           <div className="close-icon" onClick={() => setIsOpen(!isOpen)}>
-            <li className="humbergerListItem">
-              <span className="humbergerListItemText">メニューを閉じる</span>
-            </li>
+            <DisabledByDefaultIcon
+              sx={{
+                alignContent: "center",
+                justifyContent: "center",
+                marginTop: "10px",
+              }}>
+              <li className="humbergerListItem"></li>
+            </DisabledByDefaultIcon>
           </div>
         </ul>
       )}

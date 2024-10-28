@@ -79,3 +79,9 @@
     transform: translateY(5px);
     transition: all 0.3s;
 }
+
+.close-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
