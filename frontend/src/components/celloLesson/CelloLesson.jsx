@@ -89,14 +89,26 @@ const CelloLesson = () => {
           <span className="celloDescriptionUpperText">
             またチェロは後ろから抱きかかえる様に構える事から、弦楽器の中で最も自然体で構える事が出来る楽器として、体に無理なく演奏出来る所がお勧めのポイントです。
           </span>
-          <img src="./kitajima-san.jpg" className="lessonImg"></img>
+          {/* 1036px未満かどうかで写真の大きさを切り替える */}
+          {windowWidth >= 1036 ? (
+            <img src="./kitajima-san.jpg" className="celloLessonImgPC"></img>
+          ) : (
+            <img
+              src="./kitajima-san.jpg"
+              className="celloLessonImgMobile"></img>
+          )}
           <span className="celloDescriptionUpperText">
             なお当教室では『サイレントチェロ』でのレッスンも行っております。
           </span>
           <span className="celloDescriptionUpperText">
             サイレントチェロでのレッスンは、基本的にはギターアンプを使い実際に音を出してのレッスンを行います。
           </span>
-          <img src="./seyaHall.jpg" className="lessonImg"></img>
+          {/* 1036px未満かどうかで写真の大きさを切り替える */}
+          {windowWidth >= 1036 ? (
+            <img src="./seyaHall.jpg" className="celloLessonImgPC"></img>
+          ) : (
+            <img src="./seyaHall.jpg" className="celloLessonImgMobile"></img>
+          )}
         </div>
         <div className="celloDescriptionMiddle">
           <div className="priceTitle">
@@ -335,7 +347,12 @@ const CelloLesson = () => {
           <span className="celloDescriptionBottomText">
             合同レッスン練習会では個人レッスンとチェロアンサンブルを行います。
           </span>
-          <img src="./celloLesson.jpg" className="lessonImg"></img>
+          {/* 1036px未満かどうかで写真の大きさを切り替える */}
+          {windowWidth >= 1036 ? (
+            <img src="./celloLesson.jpg" className="celloLessonImgPC"></img>
+          ) : (
+            <img src="./celloLesson.jpg" className="celloLessonImgMobile"></img>
+          )}
           <span className="celloDescriptionBottomText">
             チェロを弾いてみたい、サイレントチェロでレッスンを受けたい、自宅や近所でレッスンを受けたい、その他ご希望やご要望がございましたらお気軽にお問い合わせ下さい。
           </span>
