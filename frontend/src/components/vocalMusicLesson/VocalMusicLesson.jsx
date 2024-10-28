@@ -72,6 +72,11 @@ const VocalMusicLesson = () => {
         duration: "50 分",
         price: "¥7,000",
       },
+      {
+        service: "*無料体験レッスン",
+        duration: "30 分",
+        price: "¥0",
+      },
     ],
   };
 

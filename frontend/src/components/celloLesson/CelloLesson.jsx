@@ -53,7 +53,7 @@ const CelloLesson = () => {
         price: "¥7,000",
       },
       {
-        service: "*無料体験レッスン（大人・高校生）",
+        service: "*無料体験レッスン（大人・高校生以下）",
         duration: "30 分",
         price: "¥0",
       },
@@ -67,7 +67,7 @@ const CelloLesson = () => {
         price: "¥15,000",
       },
       {
-        service: "出張レッスン 　　（高校生以下）",
+        service: "出張レッスン　　　　（高校生以下）",
         duration: "45 分",
         price: "¥11,000",
       },
