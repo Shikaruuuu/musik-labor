@@ -1,13 +1,12 @@
-.pricePageTitle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
 .priceTableWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    margin-top: 60px;
+  }
+  
+  .priceTableWrapperMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
