@@ -53,7 +53,7 @@ const Announcement = () => {
         sx={{ textAlign: "center", mt: 2, mb: 4 }}>
         お知らせ
       </Typography>
-      {announcements.map((announce, index) => (
+      {[...announcements].reverse().map((announce, index) => (
         <Paper
           key={index}
           elevation={3}

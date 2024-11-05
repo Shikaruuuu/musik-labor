@@ -6,7 +6,7 @@ export default function HomeDescription() {
     <>
       <div className="HomeDescription">
         <span className="homeDescriptionText">
-          プロチェリストとオペラ歌手による横浜発の音楽教室
+          横浜市の音楽教室／二俣川／三ツ境　チェロ／声楽／出張レッスン／出張演奏
         </span>
       </div>
     </>
