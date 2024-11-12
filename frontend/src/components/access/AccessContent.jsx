@@ -23,7 +23,7 @@ export default function AccessContent() {
           </span>
           <span className="busDescriptionText">相鉄バス 岸本下車 徒歩3分 </span>
         </div>
-        <span className="onFootText">徒歩:三ツ境駅南口徒歩 19 分 </span>
+        <span className="onFootText">徒歩:三ツ境駅北口徒歩 19 分 </span>
         <span className="parking">駐車場1台有り</span>
       </div>
     </>
