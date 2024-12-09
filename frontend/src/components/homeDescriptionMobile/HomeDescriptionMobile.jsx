@@ -9,7 +9,7 @@ export default function HomeDescriptionMobile() {
           横浜市の音楽教室／二俣川／
         </span>
         <span className="homeDescriptionMobileText">
-          三ツ境　チェロ／声楽／
+          三ツ境／チェロ／声楽／
         </span>
         <span className="homeDescriptionMobileText">
           出張レッスン／出張演奏
