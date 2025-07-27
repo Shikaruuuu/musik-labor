@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box, Paper, Typography } from "@mui/material";
+import "./Announcement.css";
 
 const Announcement = () => {
   const [announcements, setAnnouncements] = useState([]);
@@ -24,50 +25,63 @@ const Announcement = () => {
   };
 
   return (
-    <Box
-      sx={{
-        maxWidth: 600,
-        width: "80%",
-        maxHeight: 400,
-        overflowY: "auto",
-        overflowX: "hidden",
-        p: 2,
-        mx: "auto",
-        my: 4,
-        bgcolor: "#f7f7f7",
-        "&::-webkit-scrollbar": {
-          width: "0.4em",
-        },
-        "&::-webkit-scrollbar-track": {
-          boxShadow: "inset 0 0 6px rgba(0,0,0,0.1)",
-          webkitBoxShadow: "inset 0 0 6px rgba(0,0,0,0.1)",
-        },
-        "&::-webkit-scrollbar-thumb": {
-          backgroundColor: "rgba(0,0,0,.1)",
-          outline: "1px solid slategrey",
-        },
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}>
-      <Typography
-        variant="h5"
-        component="h2"
-        sx={{ textAlign: "center", mt: 2, mb: 4 }}>
-        お知らせ
-      </Typography>
-      {[...announcements].reverse().map((announce, index) => (
-        <Paper
-          key={index}
-          elevation={3}
-          sx={{ p: 2, my: 2, wordWrap: "break-word" }}>
-          <Typography variant="h6" component="h2">
-            {announce.title}
-          </Typography>
-          <Typography color="textSecondary">
-            {formatDate(announce.datetime)}
-          </Typography>
-          <Typography variant="body1">{announce.content}</Typography>
-        </Paper>
-      ))}
-    </Box>
+      <img
+        src="/hikaru_chello.jpg"
+        alt="hikaru chello"
+        className="circleImage"
+      />
+      <Box
+        sx={{
+          maxWidth: 600,
+          width: "80%",
+          maxHeight: 400,
+          overflowY: "auto",
+          overflowX: "hidden",
+          p: 2,
+          mx: "auto",
+          my: 4,
+          bgcolor: "#f7f7f7",
+          "&::-webkit-scrollbar": {
+            width: "0.4em",
+          },
+          "&::-webkit-scrollbar-track": {
+            boxShadow: "inset 0 0 6px rgba(0,0,0,0.1)",
+            webkitBoxShadow: "inset 0 0 6px rgba(0,0,0,0.1)",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "rgba(0,0,0,.1)",
+            outline: "1px solid slategrey",
+          },
+        }}>
+        <Typography
+          variant="h5"
+          component="h2"
+          sx={{ textAlign: "center", mt: 2, mb: 4 }}>
+          お知らせ
+        </Typography>
+        {[...announcements].reverse().map((announce, index) => (
+          <Paper
+            key={index}
+            elevation={3}
+            sx={{ p: 2, my: 2, wordWrap: "break-word" }}>
+            <Typography variant="h6" component="h2">
+              {announce.title}
+            </Typography>
+            <Typography color="textSecondary">
+              {formatDate(announce.datetime)}
+            </Typography>
+            <Typography variant="body1">{announce.content}</Typography>
+          </Paper>
+        ))}
+      </Box>
+      <img src="/rena_chello.jpg" alt="rena chello" className="circleImage" />
+    </div>
   );
 };
 

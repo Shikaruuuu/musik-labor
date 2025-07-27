@@ -1,0 +1,10 @@
+.homeLeftBarItem {
+    width: 150px; /* お好みのサイズに調整 */
+    height: 150px; /* 幅と同じサイズにする */
+    border-radius: 50%; /* 丸い形にする */
+    background-image: url("../../../public/concert.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-blend-mode: lighten;
+  }
