@@ -75,5 +75,13 @@
     background-position: center;
     background-color:rgba(255,255,255,0.2);
     background-blend-mode:lighten;
-  } 
-  
+  }
+
+.circleImage {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.20);
+}

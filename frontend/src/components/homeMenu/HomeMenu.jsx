@@ -4,7 +4,14 @@ import { Link } from "react-router-dom";
 
 export default function HomeMenu() {
   return (
-    <div className="homeMenu">
+    <div
+      className="homeMenu"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}>
+      <img src="/rena_piano.jpg" alt="rena piano" className="circleImage" />
       <div className="homeMenuWrapper">
         <ul className="homeMenuList">
           <Link
@@ -63,6 +70,7 @@ export default function HomeMenu() {
           </Link>
         </ul>
       </div>
+      <img src="/rena_sing.jpg" alt="rena sing" className="circleImage" />
     </div>
   );
 }
