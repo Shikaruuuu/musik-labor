@@ -1,10 +1,16 @@
 import React from "react";
 import "./HomeMenu.css";
 import { Link } from "react-router-dom";
+import CircleImage from "../common/CircleImage";
 
 export default function HomeMenu() {
   return (
-    <div className="homeMenu">
+    <div className="homeMenu homeRow">
+      <CircleImage
+        src="/rena_piano.jpg"
+        alt="rena piano"
+        style={{ objectPosition: "top center" }}
+      />
       <div className="homeMenuWrapper">
         <ul className="homeMenuList">
           <Link
@@ -63,6 +69,11 @@ export default function HomeMenu() {
           </Link>
         </ul>
       </div>
+      <CircleImage
+        src="/rena_sing.jpg"
+        alt="rena sing"
+        style={{ objectPosition: "top center" }}
+      />
     </div>
   );
 }
