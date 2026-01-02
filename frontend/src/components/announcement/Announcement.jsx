@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box, Paper, Typography } from "@mui/material";
-import "./Announcement.css";
+import CircleImage from "../common/CircleImage";
 
 const Announcement = () => {
   const [announcements, setAnnouncements] = useState([]);
@@ -25,17 +25,8 @@ const Announcement = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}>
-      <img
-        src="/hikaru_chello.jpg"
-        alt="hikaru chello"
-        className="circleImage"
-      />
+    <div className="homeRow">
+      <CircleImage src="/hikaru_chello.jpg" alt="hikaru chello" />
       <Box
         sx={{
           maxWidth: 600,
@@ -46,7 +37,10 @@ const Announcement = () => {
           p: 2,
           mx: "auto",
           my: 4,
-          bgcolor: "#f7f7f7",
+          bgcolor: "#ffffff",
+          borderRadius: 2,
+          border: "1px solid rgba(0, 0, 0, 0.06)",
+          boxShadow: "0 16px 40px rgba(0, 0, 0, 0.08)",
           "&::-webkit-scrollbar": {
             width: "0.4em",
           },
@@ -80,7 +74,7 @@ const Announcement = () => {
           </Paper>
         ))}
       </Box>
-      <img src="/rena_chello.jpg" alt="rena chello" className="circleImage" />
+      <CircleImage src="/rena_chello.jpg" alt="rena chello" />
     </div>
   );
 };

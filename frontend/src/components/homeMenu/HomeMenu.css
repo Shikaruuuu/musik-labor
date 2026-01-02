@@ -7,6 +7,7 @@
   max-width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
+  padding: 8px 0;
 }
 
 .homeMenuList {
@@ -31,6 +32,9 @@
     align-items: center;
     text-align: center;
     margin: 10px 10px;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
 
   .homeMenuListLi{
@@ -47,8 +51,7 @@
 
 .homeMenuListItem:hover {
     box-shadow: none;
-    transform: translateY(5px);
-    transition: all 0.3s;
+    transform: translateY(3px);
 }
 
 
@@ -84,20 +87,7 @@
     background-blend-mode:lighten;
   }
 
-.circleImage {
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 32px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.20);
-  object-position: top center;
-}
-
 @media (max-width: 768px) {
-  .circleImage {
-    display: none;
-  }
   .homeMenu {
     padding: 0;
     margin: 0;
